@@ -20,11 +20,14 @@ import { ResearchFormComponent } from './research-form/research-form.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlanetListComponent } from './planet-list/planet-list.component';
+import { HotelSelectionComponent } from './hotel-selection/hotel-selection.component';
 
 const appRoutes: Routes = [
   {path:"homepage", component:HomepageComponent},
   {path:"shipchoice", component:ShipchoiceComponent},
-  {path:"planetchoice", component:PlanetchoiceComponent}
+  {path:"planetchoice", component:PlanetchoiceComponent},
+  {path:"hotelselection", component:HotelSelectionComponent}
+  
 ]
 
 
@@ -41,6 +44,7 @@ const appRoutes: Routes = [
     DatepickerComponent,
     FooterComponent,
     PlanetListComponent,
+    HotelSelectionComponent,
   ],
   imports: [
     BrowserModule,
