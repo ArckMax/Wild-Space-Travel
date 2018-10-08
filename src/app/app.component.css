@@ -7,3 +7,9 @@
     font-family: "spaceSurfer";
     src: url(/src/assets/fonts/spacesurfer/SpaceSurfer_Demo.ttf)
 }
+
+.wrap{
+    background-image: url(/src/assets/img/stars-background.jpg);
+    background-attachment: fixed;
+    height:70%;
+}

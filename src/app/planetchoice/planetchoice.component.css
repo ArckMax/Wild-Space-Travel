@@ -1,0 +1,14 @@
+.container-fluid{
+    color:#FFF;
+}
+
+.bloc-list-planets{
+    overflow: auto;
+    height: 500px;
+}
+
+#current-planet{
+    width: 200px;
+    height: 200px;
+    padding-top:0;
+}
