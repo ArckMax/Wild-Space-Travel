@@ -1,0 +1,9 @@
+@font-face{
+    font-family: "newSpace";
+    src: url(/src/assets/fonts/new_space/New\ Space.ttf);
+}
+
+@font-face{
+    font-family: "spaceSurfer";
+    src: url(/src/assets/fonts/spacesurfer/SpaceSurfer_Demo.ttf)
+}

@@ -1,0 +1,26 @@
+<div id="form-wrapper">
+
+  <mat-form-field class="d-block text-center research-form-inputs">
+    <mat-select placeholder="Budget">
+      <mat-option *ngFor="let price of prices" [value]="price.value">
+        {{price.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="d-block text-center research-form-inputs">
+    <mat-select placeholder="Distance">
+      <mat-option *ngFor="let distance of distances" [value]="distance.value">
+        {{distance.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <app-datepicker class="d-block text-center research-form-inputs"></app-datepicker>
+
+
+  <button mat-stroked-button class="research-form-button">SEARCH MY TRIP</button>
+
+</div>
+
+

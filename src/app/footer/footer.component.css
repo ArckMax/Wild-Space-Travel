@@ -1,0 +1,43 @@
+/* General rules */
+
+.main-wrapper{
+    background-color: #313e49;
+}
+
+.footer-container{
+    margin:10px;
+    padding:20px;
+}
+
+h3{
+    font-family: "newSpace",'Courier New', Courier, monospace;
+    color: #FFF;
+    margin-bottom:10%;
+}
+
+
+/* Form rules */
+
+form input, form select{
+    width: 90%;
+    margin-bottom:10%;
+}
+
+/* Social networks rules  */
+
+.networks-container{
+    font-size:6em;
+}
+
+a{
+    transition: all 0.5s;
+}
+
+.sn-icon{
+    color:#51b0ff;
+}
+
+a:hover{
+    color:#FFF;
+}
+

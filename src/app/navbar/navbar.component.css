@@ -1,0 +1,13 @@
+@font-face{
+    font-family: "newSpace";
+    src: url(/src/assets/fonts/new_space/New\ Space.ttf);
+}
+
+
+button{
+    background-color:transparent;
+    color: #FFF;
+    border: none;
+    font-family: "newSpace",'Courier New', Courier, monospace;
+    font-size:1.1rem;
+}
