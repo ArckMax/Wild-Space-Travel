@@ -2,13 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSelectModule} from '@angular/material/select';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule} from "@angular/material";
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from "@angular/material";
 import { MatFormFieldModule, MatInputModule } from '@angular/material';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
-import { RouterModule, Routes} from "@angular/router";
+import { RouterModule, Routes } from "@angular/router";
  
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -20,11 +20,13 @@ import { ResearchFormComponent } from './research-form/research-form.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlanetListComponent } from './planet-list/planet-list.component';
+import { CurrentPlanetComponent } from './current-planet/current-planet.component';
 
 const appRoutes: Routes = [
   {path:"homepage", component:HomepageComponent},
   {path:"shipchoice", component:ShipchoiceComponent},
-  {path:"planetchoice", component:PlanetchoiceComponent}
+  {path:"planetchoice", component:PlanetchoiceComponent},
+  {path:"", component:HomepageComponent}
 ]
 
 
@@ -41,6 +43,7 @@ const appRoutes: Routes = [
     DatepickerComponent,
     FooterComponent,
     PlanetListComponent,
+    CurrentPlanetComponent,
   ],
   imports: [
     BrowserModule,
