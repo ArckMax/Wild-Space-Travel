@@ -1,3 +1,6 @@
-<div *ngFor="let current of ships">
-  <p>{{ship.name}}</p>
+<div class="ship-list-box container-fluid">
+  <div class="ship-box" *ngFor="let current of ships" >
+    <img src="{{current.img}}">
+    <p id="list-title-ship">{{current.name}}</p>
+  </div>
 </div>

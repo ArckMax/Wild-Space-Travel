@@ -11,4 +11,5 @@
 .wrap{
     background-image: url(/src/assets/img/stars-background.jpg);
     background-attachment: fixed;
+    padding:10px;
 }

@@ -2,13 +2,45 @@
     color:#FFF;
 }
 
-.bloc-list-ships{
-    overflow: auto;
-    height: 500px;
-}
+/* Rule for left bloc : Ship currently selected */
 
 #current-ship{
-    width: 200px;
-    height: 200px;
-    padding-top:0;
+    width: 100%;
+    margin-top:25px;
+}
+
+.display-info{
+    font-size:1.2em;
+    background-color: rgba(500, 500, 500, 0.4);
+    margin-top:10px;
+    border-radius:10px;
+
+}
+
+button{
+    font-family: "newSpace",'Courier New', Courier, monospace;
+    font-size:6vw;
+    color:#4adb4c;
+    margin-top:10%;
+    width:90%;
+    margin-bottom:20px;
+    border:none;
+    background: transparent;
+}
+
+/* Rules for right bloc : Listing ships available */
+
+.bloc-list-ships{
+    overflow: scroll;
+    height: 900px;
+    margin:0
+}
+
+.list-column{
+    padding: 0
+}
+
+
+app-ship-list{
+    padding : 5px;
 }

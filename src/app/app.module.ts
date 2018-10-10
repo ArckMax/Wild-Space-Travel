@@ -10,7 +10,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes} from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
-import { Observable } from 'rxjs';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -23,13 +22,15 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlanetListComponent } from './planet-list/planet-list.component';
 import { ShipListComponent } from './ship-list/ship-list.component';
+
 import { ShipsService } from './ships.service';
 
 
 const appRoutes: Routes = [
   {path:"homepage", component:HomepageComponent},
   {path:"shipchoice", component:ShipchoiceComponent},
-  {path:"planetchoice", component:PlanetchoiceComponent}
+  {path:"planetchoice", component:PlanetchoiceComponent},
+  {path:"", component:HomepageComponent}
 ]
 
 
