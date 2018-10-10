@@ -2,14 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSelectModule} from '@angular/material/select';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule} from "@angular/material";
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from "@angular/material";
 import { MatFormFieldModule, MatInputModule } from '@angular/material';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes} from "@angular/router";
- 
+import { HttpClientModule } from "@angular/common/http";
+import { Observable } from 'rxjs';
+
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PlanetchoiceComponent } from './planetchoice/planetchoice.component';
@@ -20,6 +22,9 @@ import { ResearchFormComponent } from './research-form/research-form.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlanetListComponent } from './planet-list/planet-list.component';
+import { ShipListComponent } from './ship-list/ship-list.component';
+import { ShipsService } from './ships.service';
+
 
 const appRoutes: Routes = [
   {path:"homepage", component:HomepageComponent},
@@ -41,6 +46,8 @@ const appRoutes: Routes = [
     DatepickerComponent,
     FooterComponent,
     PlanetListComponent,
+    ShipListComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -52,12 +59,16 @@ const appRoutes: Routes = [
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes, 
-      {enableTracing:true}
+      {
+        enableTracing:true,
+        useHash:true
+      }
     )
   ],
-  providers: [MatDatepickerModule],
+  providers: [MatDatepickerModule, ShipsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

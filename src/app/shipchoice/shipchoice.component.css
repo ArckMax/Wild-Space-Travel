@@ -1,0 +1,14 @@
+.container-fluid{
+    color:#FFF;
+}
+
+.bloc-list-ships{
+    overflow: auto;
+    height: 500px;
+}
+
+#current-ship{
+    width: 200px;
+    height: 200px;
+    padding-top:0;
+}
