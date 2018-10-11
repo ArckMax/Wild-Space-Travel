@@ -10,3 +10,14 @@
 #current-planet{
     top :auto;
 }
+
+button{
+    font-family: "newSpace",'Courier New', Courier, monospace;
+    font-size:6vw;
+    color:#4adb4c;
+    margin-top:10%;
+    width:90%;
+    margin-bottom:20px;
+    border:none;
+    background: transparent;
+}
