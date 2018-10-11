@@ -24,6 +24,7 @@ import { ShipListComponent } from './ship-list/ship-list.component';
 
 import { ShipsService } from './ships.service';
 
+import { CurrentPlanetComponent } from './current-planet/current-planet.component';
 
 const appRoutes: Routes = [
   {path:"homepage", component:HomepageComponent},
