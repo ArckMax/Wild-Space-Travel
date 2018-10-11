@@ -25,6 +25,7 @@ import { ShipListComponent } from './ship-list/ship-list.component';
 import { ShipsService } from './ships.service';
 
 import { CurrentPlanetComponent } from './current-planet/current-planet.component';
+import { HotelSelectionComponent } from './hotel-selection/hotel-selection.component';
 
 const appRoutes: Routes = [
   {path:"homepage", component:HomepageComponent},
@@ -32,6 +33,8 @@ const appRoutes: Routes = [
   {path:"planetchoice", component:PlanetchoiceComponent},
   {path:"homepage/planetchoice", component:PlanetchoiceComponent},
   {path:"", redirectTo:"homepage", pathMatch:"full"},
+  {path:"hotelselection", component:HotelSelectionComponent}
+  
 ]
 
 
@@ -49,6 +52,7 @@ const appRoutes: Routes = [
     PlanetListComponent,
     ShipListComponent,
     
+    HotelSelectionComponent,
   ],
   imports: [
     BrowserModule,
