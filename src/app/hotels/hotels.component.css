@@ -1,0 +1,65 @@
+
+
+.hotelpage-titles2{
+    color:#fff;
+    font-size:8vw;
+    text-align: center;
+    padding:5vw;
+    font-family:"newSpace", Arial, Helvetica, sans-serif;
+    opacity:0.8;
+
+}
+
+
+
+.hotels-list{
+    padding-top:5vw;
+    padding-bottom:5vw;
+    margin-right:5vw;
+    
+}
+
+
+.hotels li {
+    font-family:"newSpace";
+    cursor: pointer;
+    position: relative;   
+    font-size:3vw;   
+    background-color: #fff;
+    list-style-type: none;
+    opacity:0.8;
+    margin: .5em;
+    padding: .3em 0 .3em;
+    height: 2em;
+    border-radius: 4px;
+  }
+
+  .hotels li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+    
+  }
+
+  .hotels li:hover {
+    color:#F50057;
+    background-color:#fff;
+    
+    left: .1em;
+    
+  }
+
+  .hotels .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    text-shadow:0 5px 15px white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }

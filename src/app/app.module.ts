@@ -22,6 +22,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PlanetListComponent } from './planet-list/planet-list.component';
 import { HotelSelectionComponent } from './hotel-selection/hotel-selection.component';
 import { LoadingPageComponent } from './loading-page/loading-page.component';
+import { HotelsComponent } from './hotels/hotels.component';
 
 const appRoutes: Routes = [
   {path:"homepage", component:HomepageComponent},
@@ -50,6 +51,7 @@ const appRoutes: Routes = [
     PlanetListComponent,
     HotelSelectionComponent,
     LoadingPageComponent,
+    HotelsComponent,
     
   ],
   imports: [

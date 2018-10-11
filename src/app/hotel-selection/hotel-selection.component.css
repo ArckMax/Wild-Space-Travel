@@ -46,7 +46,17 @@
 }  
 */
 
-.top-3-destinations  {
+
+h5{
+
+    font-size:6.5vw;
+    text-shadow:0 5px 15px white;
+    opacity:0.9;
+    
+}
+
+
+.hotelpage-titles {
 
     color:#fff;
     font-size:8vw;
