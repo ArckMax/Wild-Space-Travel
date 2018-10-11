@@ -48,6 +48,7 @@ export class ResearchFormComponent {
   // Function to formalize into an object informations choosen by user
   // Temporarely console.log this object. 
   // This object need to be accessible everywhere on website
+  // IDEA => SHOW A RESUME OF SETTINGS JUST UNDER THE NAVBAR, EVERYTIME
   
   public function getInfo(infoTrip):void{
     let obj:InfoTrip = {
@@ -56,7 +57,6 @@ export class ResearchFormComponent {
       date: this.roomsFilter.date,
     };
     console.log(obj);
-    }
   };
 
 
