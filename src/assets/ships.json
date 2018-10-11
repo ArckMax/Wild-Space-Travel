@@ -16,44 +16,44 @@
     "img" : "src/assets/img/discovery1.jpg"
   },
   {
-    "name": "Wasp",
-    "nbEngine" : 1,
-    "nbWing" : 2,
+    "name": "Prawn Mothership",
+    "nbEngine" : 150,
+    "nbWing" : 0,
     "price" : 499,
     "nbPlaces" : 1500000,
-    "img" : "src/assets/img/aircraft-78060_1920.jpg"
+    "img" : "src/assets/img/motherprawn.jpg"
   },
   {
     "name": "Millenium Falcon",
     "nbEngine" : 4,
     "nbWing" : 2,
     "price" : 1500,
-    "nbPlaces" : 850000,
+    "nbPlaces" : 12,
     "img" : "src/assets/img/millenium-falcon-1627322_1920.jpg"
   },
   {
-    "name": "Exodus",
+    "name": "Skyline",
     "nbEngine" : 8,
     "nbWing" : 6,
     "price" : 5000,
     "nbPlaces" : 250000,
-    "img" : "src/assets/img/science-fiction-441708_1920.jpg"
+    "img" : "src/assets/img/skyline.jpg"
   },
   {
-    "name": "Titan",
+    "name": "Mondoshawan Vessel",
     "nbEngine" : 15,
     "nbWing" : 6,
     "price" : 5000,
     "nbPlaces" : 250000,
-    "img" : "src/assets/img/science-fiction-1924249.jpg"
+    "img" : "src/assets/img/mondoshawan.jpg"
   },
   {
-    "name": "Exodus2",
+    "name": "Nostromo",
     "nbEngine" : 8,
     "nbWing" : 6,
     "price" : 5000,
     "nbPlaces" : 250000,
-    "img" : "src/assets/img/space-2197862_1920.jpg"
+    "img" : "src/assets/img/nostromo.jpg"
   },
   {
     "name": "Bee",
@@ -64,12 +64,12 @@
     "img" : "src/assets/img/spaceship-1707016.jpg"
   },
   {
-    "name": "Tiger2000",
+    "name": "Narada",
     "nbEngine" : 8,
     "nbWing" : 6,
     "price" : 5000,
     "nbPlaces" : 15,
-    "img" : "src/assets/img/spaceship-2098519_1920.jpg"
+    "img" : "src/assets/img/narada.jpg"
   },
   {
     "name": "Onyx",
