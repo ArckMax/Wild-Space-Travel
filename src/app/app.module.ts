@@ -18,7 +18,6 @@ import { ShipchoiceComponent } from './shipchoice/shipchoice.component';
 import { SummaryComponent } from './summary/summary.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ResearchFormComponent } from './research-form/research-form.component';
-import { DatepickerComponent } from './datepicker/datepicker.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlanetListComponent } from './planet-list/planet-list.component';
 import { ShipListComponent } from './ship-list/ship-list.component';
@@ -44,7 +43,6 @@ const appRoutes: Routes = [
     SummaryComponent,
     NavbarComponent,
     ResearchFormComponent,
-    DatepickerComponent,
     FooterComponent,
     PlanetListComponent,
     ShipListComponent,
@@ -68,6 +66,7 @@ const appRoutes: Routes = [
         useHash:true
       }
     )
+    
   ],
   providers: [MatDatepickerModule, ShipsService],
   bootstrap: [AppComponent]
