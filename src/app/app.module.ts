@@ -30,7 +30,7 @@ const appRoutes: Routes = [
   {path:"homepage", component:HomepageComponent},
   {path:"shipchoice", component:ShipchoiceComponent},
   {path:"planetchoice", component:PlanetchoiceComponent},
-  {path:"", component:HomepageComponent}
+  {path:"", redirectTo:"homepage", pathMatch:"full"}
 ]
 
 

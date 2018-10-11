@@ -19,7 +19,7 @@ export class ShipsService {
   public getShips():Observable<Ship[]>{
     return this.httpService.get("assets/ships.json").pipe(
       map(
-        (param_my_response:Response) => {
+        (param_my_response) => {
           let obj:Ship[] = param_my_response as Ship[];
           return obj;
         }

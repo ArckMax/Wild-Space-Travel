@@ -5,15 +5,15 @@
     "nbWing" : 2,
     "price" : 499,
     "nbPlaces" : 1500000,
-    "img" : "src/assets/img/aircraft-78060_1920.jpg"
+    "img" : "src/assets/img/eagle5.jpg"
   },
   {
-    "name": "Discovery",
+    "name": "Discovery One",
     "nbEngine" : 1,
     "nbWing" : 2,
     "price" : 499,
     "nbPlaces" : 1500000,
-    "img" : "src/assets/img/aircraft-78060_1920.jpg"
+    "img" : "src/assets/img/discovery1.jpg"
   },
   {
     "name": "Wasp",
