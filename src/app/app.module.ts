@@ -21,12 +21,16 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlanetListComponent } from './planet-list/planet-list.component';
 import { HotelSelectionComponent } from './hotel-selection/hotel-selection.component';
+import { LoadingPageComponent } from './loading-page/loading-page.component';
 
 const appRoutes: Routes = [
   {path:"homepage", component:HomepageComponent},
+  {path:"loading", component:LoadingPageComponent},
   {path:"shipchoice", component:ShipchoiceComponent},
   {path:"planetchoice", component:PlanetchoiceComponent},
-  {path:"hotelselection", component:HotelSelectionComponent}
+  {path:"hotelselection", component:HotelSelectionComponent},
+  
+
   
 ]
 
@@ -45,6 +49,8 @@ const appRoutes: Routes = [
     FooterComponent,
     PlanetListComponent,
     HotelSelectionComponent,
+    LoadingPageComponent,
+    
   ],
   imports: [
     BrowserModule,
