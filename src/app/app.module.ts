@@ -26,9 +26,12 @@ import { ShipsService } from './ships.service';
 
 import { CurrentPlanetComponent } from './current-planet/current-planet.component';
 import { HotelSelectionComponent } from './hotel-selection/hotel-selection.component';
+import { LoadingPageComponent } from './loading-page/loading-page.component';
+import { HotelsComponent } from './hotels/hotels.component';
 
 const appRoutes: Routes = [
   {path:"homepage", component:HomepageComponent},
+  {path:"loading", component:LoadingPageComponent},
   {path:"shipchoice", component:ShipchoiceComponent},
   {path:"planetchoice", component:PlanetchoiceComponent},
   {path:"homepage/planetchoice", component:PlanetchoiceComponent},
@@ -53,6 +56,9 @@ const appRoutes: Routes = [
     ShipListComponent,
     
     HotelSelectionComponent,
+    LoadingPageComponent,
+    HotelsComponent,
+    
   ],
   imports: [
     BrowserModule,

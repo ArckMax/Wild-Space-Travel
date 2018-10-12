@@ -1,0 +1,116 @@
+
+
+
+/* ----tests images panoramiques------
+
+
+.panoramix{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    padding:0;
+    margin:0;
+    /*clip: rect(Opx, 0px, 100%, 200px);
+}
+
+.panoramix img{
+    position: relative;
+    top: calc( 10% - 10px);
+}*/
+
+/*.hotel-pic{
+    border-top:solid black 2vw;
+    border-bottom:solid black 2vw;
+
+}*/
+
+.hotel-img-container{
+    position:relative;
+    text-align: center;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    padding:0;
+    margin:0;
+}
+
+/* responsive images vertical  
+
+@media only screen and (min-width:900px){
+
+    .hotel-img-container{
+
+        width: 30%;
+        height:100%;
+    }
+}  
+*/
+
+
+h5{
+
+    font-size:6.5vw;
+    text-shadow:0 5px 15px white;
+    opacity:0.9;
+    
+}
+
+
+.hotelpage-titles {
+
+    color:#fff;
+    font-size:8vw;
+    text-align: center;
+    padding:5vw;
+    font-family:"newSpace", Arial, Helvetica, sans-serif;
+    opacity:0.8;
+    
+}
+
+
+.hotel-pic-caption{
+    position:absolute; 
+    padding-top:1vw;   
+    color:white;
+    font-size:12vw;
+    opacity:0.5;
+    z-index:1;
+    font-family:"spaceSurfer", Arial, Helvetica, sans-serif;
+    
+    
+    
+
+
+}
+
+
+.hotel-gallery{
+    padding-top:5vw;
+    padding-bottom:5vw;
+
+    
+}
+.hotel-gallery img{
+    margin:1vw;
+}
+    
+        
+ 
+#carouselExampleControls{
+    padding-top:8vw;
+}
+
+
+.carousel-caption {
+
+    padding:10vw;
+
+}
+
+
+.carousel-caption p{
+
+    font-size:10vw;
+    opacity:0.6;
+
+}

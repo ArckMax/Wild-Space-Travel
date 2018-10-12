@@ -5,11 +5,41 @@
 
 @font-face{
     font-family: "spaceSurfer";
-    src: url(/src/assets/fonts/spacesurfer/SpaceSurfer_Demo.ttf)
+    src: url(/src/assets/fonts/spacesurfer/SpaceSurfer_Demo.ttf);
+
 }
+
+@font-face{
+    font-family : "SpaceXrebron";
+    src: url(/src/assets/fonts/space_1/space\ Xrebron.ttf);
+}
+
+@font-face{
+    font-family : "RadioSpace";
+    src: url(/src/assets/fonts/radio_space/radiospace.ttf);
+}
+
+@font-face{
+    font-family : "RadioSpace3D";
+    src: url(/src/assets/fonts/radio_space/radiospace3d.ttf);
+}
+
+@font-face{
+    font-family : "OtherSpace";
+    src: url(/src/assets/fonts/other_space/Other\ Space.ttf);
+}
+
+
+
 
 .wrap{
     background-image: url(/src/assets/img/stars-background.jpg);
     background-attachment: fixed;
+<<<<<<< HEAD
     padding:10px;
 }
+=======
+    
+}
+
+>>>>>>> hotel-selection
