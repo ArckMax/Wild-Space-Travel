@@ -50,7 +50,7 @@ export class ResearchFormComponent {
   // This object need to be accessible everywhere on website
   // IDEA => SHOW A RESUME OF SETTINGS JUST UNDER THE NAVBAR, EVERYTIME
   
-  public function getInfo(infoTrip):void{
+  getInfo(infoTrip):void{
     let obj:InfoTrip = {
       budget : this.infoTrip.budget,
       distance : this.infoTrip.distance,

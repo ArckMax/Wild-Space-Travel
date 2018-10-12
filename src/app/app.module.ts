@@ -54,7 +54,7 @@ const appRoutes: Routes = [
     FooterComponent,
     PlanetListComponent,
     ShipListComponent,
-    
+    CurrentPlanetComponent,
     HotelSelectionComponent,
     LoadingPageComponent,
     HotelsComponent,
