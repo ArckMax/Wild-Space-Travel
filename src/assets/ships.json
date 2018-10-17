@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Eagle-5",
+    "nbEngine" : 1,
+    "nbWing" : 2,
+    "price" : 499,
+    "nbPlaces" : 1500000,
+    "img" : "src/assets/img/eagle5.jpg"
+  },
+  {
+    "name": "Discovery One",
+    "nbEngine" : 1,
+    "nbWing" : 2,
+    "price" : 499,
+    "nbPlaces" : 1500000,
+    "img" : "src/assets/img/discovery1.jpg"
+  },
+  {
+    "name": "Prawn Mothership",
+    "nbEngine" : 150,
+    "nbWing" : 0,
+    "price" : 499,
+    "nbPlaces" : 1500000,
+    "img" : "src/assets/img/motherprawn.jpg"
+  },
+  {
+    "name": "Millenium Falcon",
+    "nbEngine" : 4,
+    "nbWing" : 2,
+    "price" : 1500,
+    "nbPlaces" : 12,
+    "img" : "src/assets/img/millenium-falcon-1627322_1920.jpg"
+  },
+  {
+    "name": "Skyline",
+    "nbEngine" : 8,
+    "nbWing" : 6,
+    "price" : 5000,
+    "nbPlaces" : 250000,
+    "img" : "src/assets/img/skyline.jpg"
+  },
+  {
+    "name": "Mondoshawan Vessel",
+    "nbEngine" : 15,
+    "nbWing" : 6,
+    "price" : 5000,
+    "nbPlaces" : 250000,
+    "img" : "src/assets/img/mondoshawan.jpg"
+  },
+  {
+    "name": "Nostromo",
+    "nbEngine" : 8,
+    "nbWing" : 6,
+    "price" : 5000,
+    "nbPlaces" : 250000,
+    "img" : "src/assets/img/nostromo.jpg"
+  },
+  {
+    "name": "Bee",
+    "nbEngine" : 1,
+    "nbWing" : 4,
+    "price" : 5000,
+    "nbPlaces" : 2,
+    "img" : "src/assets/img/spaceship-1707016.jpg"
+  },
+  {
+    "name": "Narada",
+    "nbEngine" : 8,
+    "nbWing" : 6,
+    "price" : 5000,
+    "nbPlaces" : 15,
+    "img" : "src/assets/img/narada.jpg"
+  },
+  {
+    "name": "Onyx",
+    "nbEngine" : 1,
+    "nbWing" : 4,
+    "price" : 5000,
+    "nbPlaces" : 12500,
+    "img" : "src/assets/img/science-fiction-1924249.jpg"
+  },
+  {
+    "name": "USS-Starfleet",
+    "nbEngine" : 1,
+    "nbWing" : 4,
+    "price" : 5000,
+    "nbPlaces" : 2,
+    "img" : "src/assets/img/spaceship-1707016.jpg"
+  }
+]
