@@ -9,6 +9,7 @@ import { MatFormFieldModule, MatInputModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from "@angular/router";
+import {HttpModule} from "@angular/http";
  
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -21,6 +22,8 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlanetListComponent } from './planet-list/planet-list.component';
 import { CurrentPlanetComponent } from './current-planet/current-planet.component';
+
+import { PlanetService } from "./planet.service";
 
 const appRoutes: Routes = [
   {path:"homepage", component:HomepageComponent},
@@ -55,12 +58,13 @@ const appRoutes: Routes = [
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    HttpModule,
     RouterModule.forRoot(
       appRoutes, 
       {enableTracing:true}
     )
   ],
-  providers: [MatDatepickerModule],
+  providers: [MatDatepickerModule,PlanetService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

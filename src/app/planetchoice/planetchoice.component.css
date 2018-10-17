@@ -5,6 +5,7 @@
 .bloc-list-planets{
     overflow: auto;
     height: 500px;
+    margin : 0 auto;
 }
 
 #current-planet{
