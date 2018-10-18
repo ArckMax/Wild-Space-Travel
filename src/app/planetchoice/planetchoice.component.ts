@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-planetchoice',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanetchoiceComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  private getChosenPlanet(){
+    this.userSettings.chosenPlanet = this;
   }
 
+sub;
+
+public userSettings:any={
+  "budget": 0,
+  "distance":"",
+  "chosenPlanet" : ""
 }
+
+  constructor(private _Activatedroute:ActivatedRoute) {}
+
+  ngOnInit() {
+    
+  this.sub=this._Activatedroute.params.subscribe(params => { 
+    this.userSettings.budget = params['budget']; 
+    this.userSettings.distance = params["distance"];
+  });
+  console.log(this.userSettings.distance);
+}}

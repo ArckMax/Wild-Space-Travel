@@ -1,12 +1,26 @@
 <div class="container-fluid">
   <h1 class="pagetitle">Planet selection</h1>
-  <div class="col-8 d-inline-block">
-    <app-current-planet class=" align-top"></app-current-planet>
-    <button>Chose this planet ! </button>
+  <h4 *ngIf="userSettings.distance != undefined" class="text-center">Your distance choice : {{userSettings.distance}}</h4>
+
+  <div class="col-8 d-none d-lg-inline-block">
+
+    <div class="container-fluid">
+      <img src="/src/assets/img/earth-1151659_1920.jpg">
+      <div class="info-current-planet text-center">
+        <h4>Kepler-881 b</h4>
+        <ul>
+          <li><strong>Distance to Earth: </strong> 1364 parsec</li>
+          <li><strong>Climat  : </strong> Electrical storm</li>
+          <li><strong>Weight : </strong> 125 Earth</li>
+        </ul>
+      </div>
+    </div>
+    
+    <button (click)="getChosenPlanet()" [routerLink]="['/shipchoice',userSettings.budget,userSettings.distance]">Chose this planet ! </button>
   </div>
 
 
-  <div class="col-4 container-fluid d-inline-block text-center">
+  <div class="col-12 col-lg-4 container-fluid d-inline-block text-center">
     <div class="fa fa-arrow-up"></div>
     <div class= "bloc-list-planets">
       <app-planet-list></app-planet-list>
