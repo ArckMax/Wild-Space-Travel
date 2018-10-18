@@ -1,3 +1,14 @@
+h1{
+    font-family: 'Kodchasan', sans-serif;
+    text-shadow:0 5px 15px black;
+}
+h2{
+    font-family: 'Kodchasan', sans-serif;
+    text-shadow:0 5px 15px black;
+}
+
+
+
 .container-fluid{
     color:#FFF;
 }

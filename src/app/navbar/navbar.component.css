@@ -11,6 +11,7 @@ a{
     font-family: "newSpace",'Courier New', Courier, monospace;
     font-size:4vw;
     transition: all 0.5s;
+    
 
 }
 
@@ -32,41 +33,10 @@ a:hover{
     color: #FFF;
     text-shadow:0 5px 15px white;
     font-size:5vw;  
+    text-align: center;
+    margin-top:2vw;
 
 }
-
-
-/* 
-@media only screen and (max-width: 400px) {
-
-    .mainTitle{
-        font-size:7vw; 
-         
-    }
-
-    .text-muted{
-        font-size:5vw;
-        
-    }
-
-} */
-
-
-
-/* @media only screen and (min-width: 500px) {
-
-    /* .mainTitle{
-        font-size:7vw; 
-         
-    } */
-
-/*     .text-muted{
-        font-size:1vw;
-        
-    }
-
-} */
-
 
 
 
@@ -81,11 +51,10 @@ a:hover{
 
 .text-muted{
 
-    font-family: /* 'Kodchasan', sans-serif; */ /*  'Bad Script', */ 'Nova Script', 'Aguafina Script', 'Oleo Script',cursive; 
+    font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script', 'Aguafina Script', 'Oleo Script',cursive */; 
     font-size:3vw;
     margin-top:0;
-  
-   
+    margin-left:5%;
 
 }
 
@@ -94,10 +63,6 @@ a:hover{
     margin-top:2vw;
     margin-right:2vw;
 }
-.main-title{
-    float:right;
-}
-
 
 
 

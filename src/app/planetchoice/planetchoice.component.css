@@ -1,3 +1,10 @@
+
+h1{
+    font-family: 'Kodchasan', sans-serif;
+    text-shadow:0 5px 15px black;
+}
+
+
 .container-fluid{
     color:#FFF;
 }
@@ -31,6 +38,7 @@ img{
     height: 200px;
     margin-top:25px;
 }
+
 h4{
     margin-top:25px;
 }
