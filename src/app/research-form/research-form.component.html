@@ -21,7 +21,7 @@
   </mat-form-field>
     
 
-  <button mat-stroked-button (click)="getInfo()" class="research-form-button">SEARCH MY TRIP</button>
+  <a mat-stroked-button *ngIf="budget!=undefined && distance!=undefined && date != undefined" (click)="getInfo()" class="research-form-button" [routerLink]="['/planetchoice', budget,distance]">SEARCH MY TRIP</a>
 
 </div>
 

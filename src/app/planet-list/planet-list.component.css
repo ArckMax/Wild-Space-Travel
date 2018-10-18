@@ -1,5 +1,6 @@
 .planet-box{
     width:100%;
+    min-height: 200px;
     margin : 5px;
     padding: 5px;
     background-color: rgba(500, 500, 500, 0.4);

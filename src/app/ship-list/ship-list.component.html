@@ -2,5 +2,7 @@
   <div class="ship-box" *ngFor="let current of ships" >
     <img src="{{current.img}}">
     <p id="list-title-ship">{{current.name}}</p>
+    <p>Price : {{current.price}}</p>
+    <button class="d-lg-none" [routerLink]="['/summary',userSettings.budget/userSettings.distance]" routerLinkActive="router-link-active" >Chose this ship</button>
   </div>
 </div>
