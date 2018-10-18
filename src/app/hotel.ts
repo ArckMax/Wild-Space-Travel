@@ -2,6 +2,6 @@
 
 
 export class Hotel {
-    id :number;
+    /* id :number; */
     name : string;
 }

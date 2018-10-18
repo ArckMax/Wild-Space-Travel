@@ -21,10 +21,10 @@
 
 
 .hotels li {
-    font-family:"newSpace";
+    font-family:'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script', */ /* 'Aguafina Script', */ /* 'Oleo Script',cursive; */ 
     cursor: pointer;
     position: relative;   
-    font-size:3vw;   
+    font-size:4vw;   
     background-color: #fff;
     list-style-type: none;
     opacity:0.8;
@@ -47,7 +47,7 @@
     left: .1em;
     
   }
-
+/* 
   .hotels .badge {
     display: inline-block;
     font-size: small;
@@ -62,4 +62,4 @@
     height: 1.8em;
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
-  }
+  } */
