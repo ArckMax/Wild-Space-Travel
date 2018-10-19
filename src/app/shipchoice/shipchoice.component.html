@@ -1,7 +1,9 @@
 <div class="container-fluid text-center">
   <h1 class="pagetitle">Ship selection</h1>
   <h4 *ngIf="userSettings.budget != undefined">Your Maximum budget : {{userSettings.budget}}</h4>
+
   <div class="d-none d-lg-inline-block col-8 align-top text-center box-container">
+    
     <h2>Current ship selection</h2>
     <div class="col-12">
       <img src="/src/assets/img/millenium-falcon-1627322_1920.jpg" alt="Current ship" id="current-ship">
@@ -16,7 +18,7 @@
 
   <div class="col-12 col-lg-4 d-inline-block text-center list-column">
    <!--  <h2>Ship List</h2> -->
-    <div class="bloc-list-ships">
+    <div class="bloc-liscolt-ships">
       <app-ship-list></app-ship-list>
     </div>
   </div>

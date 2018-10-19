@@ -1,9 +1,9 @@
 .planet-box{
-    width:100%;
-    min-height: 200px;
-    margin : 5px;
-    padding: 5px;
-    background-color: rgba(500, 500, 500, 0.4);
-    border : 1px solid white;
-    border-radius: 20px;
+    background-color: rgba(500, 500, 500, 0.6);
+    width: 100%;
+    margin-top:5vw;
+}
+
+img{
+    width: 100%;
 }

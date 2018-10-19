@@ -1,4 +1,5 @@
 <div *ngFor="let current of list" class="planet-box text-center">
+        <img src="/src/assets/img/earth-1151659_1920.jpg">
         <p>Planet Name : {{current.pl_name}}</p>
         <p>Distance to Earth : {{current.st_dist}}</p>
         <button class="d-sm-inline-block d-md-inline-block d-lg-none" [routerLink]="['/shipchoice',userSettings.budget,userSettings.distance]" >GO ON THIS PLANET</button>

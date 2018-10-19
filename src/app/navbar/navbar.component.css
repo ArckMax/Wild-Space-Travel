@@ -3,6 +3,9 @@
     src: url(/src/assets/fonts/new_space/New\ Space.ttf);
 }
 
+.navwrap{
+    height:150px
+}
 
 a{
     background-color:transparent;
@@ -38,22 +41,12 @@ a:hover{
 
 }
 
-
-
-
-.main-title-burger-container{
-
-    width:100%;
-}
-
-
-
 .text-muted{
 
     font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script', 'Aguafina Script', 'Oleo Script',cursive */; 
     font-size:3vw;
     margin-top:0;
-    margin-left:5%;
+    margin-left:2vw;
 
 }
 
@@ -61,6 +54,9 @@ a:hover{
     float:left;
     margin-top:2vw;
     margin-right:2vw;
+    height: 0;
+    outline:none;
+    border: none;
 
 }
 

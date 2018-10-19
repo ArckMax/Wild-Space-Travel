@@ -2,7 +2,7 @@
   <h1 class="pagetitle">Planet selection</h1>
   <h4 *ngIf="userSettings.distance != undefined" class="text-center">Your distance choice : {{userSettings.distance}}</h4>
 
-  <div class="col-8 d-none d-lg-inline-block">
+  <div class="row col-8 d-none d-lg-inline-block">
 
     <div class="container-fluid">
       <img src="/src/assets/img/earth-1151659_1920.jpg">
@@ -20,12 +20,10 @@
   </div>
 
 
-  <div class="col-12 col-lg-4 container-fluid d-inline-block text-center">
-    <div class="fa fa-arrow-up"></div>
+  <div class="col-12 col-lg-4 container-fluid d-inline-block text-center p-0">
     <div class= "bloc-list-planets">
       <app-planet-list></app-planet-list>
     </div>
-    <div class="fa fa-arrow-down"></div>
   </div>
 
 </div>
