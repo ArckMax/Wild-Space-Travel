@@ -33,11 +33,10 @@ a:hover{
     color: #FFF;
     text-shadow:0 5px 15px white;
     font-size:5vw;  
-    text-align: center;
     margin-top:2vw;
+   
 
 }
-
 
 
 
@@ -62,6 +61,7 @@ a:hover{
     float:left;
     margin-top:2vw;
     margin-right:2vw;
+
 }
 
 
@@ -89,7 +89,7 @@ a:hover{
     height: 1.5vw;
     background-color: #333;
     margin: 1vw 0;
-    transition: 0.4s;
+    transition: 0.3s;
     
 }
 

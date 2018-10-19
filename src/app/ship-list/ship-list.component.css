@@ -5,8 +5,20 @@ img{
 .ship-box{
     background-color: rgba(500, 500, 500, 0.6);
     width: 100%;
+    margin-top:5vw;
+
 }
 
 #list-title-ship{
     font-size:2em;
+    font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script', 'Aguafina Script', 'Oleo Script',cursive */;
+    text-shadow:0 5px 15px black;
+}
+
+.list-title-ship-price{
+
+    font-size:1em;
+    font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script', 'Aguafina Script', 'Oleo Script',cursive */;
+    text-shadow:0 5px 15px black;
+
 }

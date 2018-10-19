@@ -1,18 +1,16 @@
 
 
+<div id="hotelslistpage">
+  <div class="hotels-list">
 
-<div class="hotels-list">
+      <ul class="hotels">
+          <li *ngFor="let hotel of hotels" 
+            [class.selected]="hotel === selectedHotel"
+            (click)="onSelect(hero)">
+            <span class="badge"> {{hotel.id}}</span> {{hotel.name}}
+          </li>
+        </ul>
 
-    <ul class="hotels">
-        <li *ngFor="let hotel of hotels" 
-          [class.selected]="hotel === selectedHotel"
-          (click)="onSelect(hero)">
-          <span class="badge"> {{hotel.id}}</span> {{hotel.name}}
-        </li>
-      </ul>
-
-    <div *ngIf="selectedHotel"> 
+      <div *ngIf="selectedHotel"> 
+  </div>    
 </div>
-
-     
-

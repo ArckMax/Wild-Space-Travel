@@ -11,7 +11,8 @@
     text-align:center;     
     width: 100%;
     height: 800px;
-
+    font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script',  *//* ' Aguafina Script',  */ /* 'Oleo Script' *//* ,cursive; */ 
+    font-size:8vw;
   }
 
 
