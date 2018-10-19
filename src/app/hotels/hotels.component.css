@@ -5,8 +5,6 @@
 }
 
 
-
-
 @media only screen and (min-width:900px){
 
   .ul li{
@@ -21,13 +19,17 @@
 
 .hotelpage-titles2{
     color:#fff;
-    font-size:8vw;
     text-align: center;
     padding:5vw;
     font-family:"newSpace", Arial, Helvetica, sans-serif;
     opacity:0.8;
 
 }
+
+
+
+
+
 
 .hotels{
   margin-left:-9%;
@@ -46,7 +48,7 @@
     font-family:'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script', */ /* 'Aguafina Script', */ /* 'Oleo Script',cursive; */ 
     cursor: pointer;
     position: relative;   
-    font-size:4vw;   
+    font-size:1em;   
     background-color: #fff;
     list-style-type: none;
     opacity:0.8;
