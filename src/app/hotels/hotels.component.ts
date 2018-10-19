@@ -20,7 +20,7 @@ export class HotelsComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSelect(hero : Hotel):void{
+  onSelect(hotel : Hotel):void{
     this.selectedHotel = Hotel;
 
   }

@@ -1,7 +1,7 @@
 /* General rules */
 
 .main-wrapper{
-    background-color: #313e49;
+    background-color: black;
 }
 
 .footer-container{
@@ -12,6 +12,7 @@
 h3{
     font-family: "newSpace",'Courier New', Courier, monospace;
     color: #FFF;
+    text-shadow:0 5px 15px white;
     margin-bottom:10%;
 }
 
@@ -19,14 +20,15 @@ h3{
 /* Form rules */
 
 form input, form select{
-    width: 90%;
+    width: 70%;
     margin-bottom:10%;
+    border-radius:0%;
 }
 
 /* Social networks rules  */
 
 .networks-container{
-    font-size:6em;
+    font-size:4em;
 }
 
 a{
@@ -39,5 +41,14 @@ a{
 
 a:hover{
     color:#FFF;
+    text-shadow:0 5px 15px white;
 }
 
+
+/* Legal mentions rules  */
+
+#legal-mentions{
+    color : #83D7DC;
+    border : 0.01px solid #83D7DC;
+    text-align: center;
+}

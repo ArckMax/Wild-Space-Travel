@@ -29,11 +29,26 @@
     src: url(/src/assets/fonts/other_space/Other\ Space.ttf);
 }
 
+@font-face{
+    font-family : "SignPainterRegular";
+    src: url(/src/assets/fonts/sign-painter/Sign_Painter_Regular.ttf);
+
+}
+
+@font-face{
+    font-family : "Sign Painter";
+    src: url(/src/assets/fonts/sign-painter/Sign_Painter.ttc);
+
+}
+
+
+
+
 
 
 
 .wrap{
-    background-image: url(/src/assets/img/stars-background.jpg);
+    background-image: url(/src/assets/img/galaxy1.jpg);
     background-attachment: fixed;
     padding:10px;
 }

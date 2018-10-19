@@ -10,6 +10,11 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+
+    function myFunction(x) {
+      x.classList.toggle("change");
   }
 
+}
 }

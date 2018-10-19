@@ -1,6 +1,7 @@
 #main-title{
-    font-family: "newSpace",'Courier New', Courier, monospace;
+    font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script',  *//* ' Aguafina Script',  */ /* 'Oleo Script' *//* ,cursive; */ 
     color:#FFF;
-    font-size:2em;
+    text-shadow:0 5px 15px black;
+    font-size:6vw;
     padding-top: 10%;
 }
