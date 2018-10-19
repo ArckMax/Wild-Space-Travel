@@ -26,10 +26,13 @@ import { CurrentPlanetComponent } from './current-planet/current-planet.componen
 import { HotelSelectionComponent } from './hotel-selection/hotel-selection.component';
 import { LoadingPageComponent } from './loading-page/loading-page.component';
 import { HotelsComponent } from './hotels/hotels.component';
+import { TrendPlaneteComponent } from './trend-planete/trend-planete.component';
+import { TrendComponent } from './trend/trend.component';
 
 
 import { ShipsService } from './ships.service';
 import { PlanetService } from "./planet.service";
+
 
 
 const appRoutes: Routes = [
@@ -61,6 +64,8 @@ const appRoutes: Routes = [
     HotelSelectionComponent,
     LoadingPageComponent,
     HotelsComponent,
+    TrendPlaneteComponent,
+    TrendComponent,
     
   ],
   imports: [
