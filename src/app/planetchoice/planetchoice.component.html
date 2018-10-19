@@ -1,17 +1,19 @@
-<div class="container-fluid">
+<div class="container-fluid text-center">
   <h1 class="pagetitle">Planet selection</h1>
   <h4 *ngIf="userSettings.distance != undefined" class="text-center">Your distance choice : {{userSettings.distance}}</h4>
 
-  <div class="row col-8 d-none d-lg-inline-block">
+  <div class="d-none d-lg-inline-block col-8 align-top text-center box-container">
 
-    <div class="container-fluid">
+    <h2>Current planet selection</h2>
+    <div class="col-12">
       <img src="/src/assets/img/earth-1151659_1920.jpg">
-      <div class="info-current-planet text-center">
-        <h4>Kepler-881 b</h4>
+      <div class=" text-center">
+        
         <ul>
-          <li><strong>Distance to Earth: </strong> 1364 parsec</li>
-          <li><strong>Climat  : </strong> Electrical storm</li>
-          <li><strong>Weight : </strong> 125 Earth</li>
+          <li><h2>Kepler-881 b</h2></li>
+          <li class="display-info"><strong>Distance to Earth: </strong> 1364 parsec</li>
+          <li class="display-info"><strong>Climat  : </strong> Electrical storm</li>
+          <li class="display-info"><strong>Weight : </strong> 125 Earth</li>
         </ul>
       </div>
     </div>
@@ -20,7 +22,7 @@
   </div>
 
 
-  <div class="col-12 col-lg-4 container-fluid d-inline-block text-center p-0">
+  <div class="col-12 col-lg-4 container-fluid d-inline-block text-center">
     <div class= "bloc-list-planets">
       <app-planet-list></app-planet-list>
     </div>

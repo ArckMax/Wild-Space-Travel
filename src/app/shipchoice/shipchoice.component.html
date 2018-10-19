@@ -13,16 +13,17 @@
       <div class="display-info"> Price : 7500</div>
       <div class="display-info"> Infomations :Can contain Wookies, Clones or others. In case of Sith infestation, do
         not try to escape without having put beforehand a combination.</div>
-    </div>
+    </div> 
+    <button class="d-none d-lg-inline-block" [routerLink]="['/summary', userSettings.budget, userSettings.distance]"
+    routerLinkActive="router-link-active">Chose this ship</button>
   </div>
 
   <div class="col-12 col-lg-4 d-inline-block text-center list-column">
    <!--  <h2>Ship List</h2> -->
-    <div class="bloc-liscolt-ships">
+    <div class="bloc-list-ships">
       <app-ship-list></app-ship-list>
     </div>
   </div>
 
-  <button class="d-none d-lg-inline-block" [routerLink]="['/summary', userSettings.budget, userSettings.distance]"
-    routerLinkActive="router-link-active">Chose this ship</button>
+
 </div>

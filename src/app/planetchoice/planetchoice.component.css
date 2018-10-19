@@ -4,15 +4,19 @@ h1{
     text-shadow:0 5px 15px black;
 }
 
+h2{
+    font-family: 'Kodchasan', sans-serif;
+}
+
 
 .container-fluid{
     color:#FFF;
 }
 
 .bloc-list-planets{
-    overflow: auto;
-    height: 500px;
-    margin : 0 auto;
+    overflow: scroll;
+    height: 900px;
+    margin:0
 }
 
 #current-planet{
@@ -52,4 +56,12 @@ ul{
     margin-top: 10%;
     padding: 2%;
     border-radius: 25px;
+}
+
+.display-info{
+    font-size:1.5em;
+    background-color: rgba(500, 500, 500, 0.4);
+    margin-top:10px;
+    border-radius:10px;
+
 }
