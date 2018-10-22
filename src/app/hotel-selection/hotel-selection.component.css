@@ -1,10 +1,52 @@
 
+#main-title{
+    font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script',  *//* ' Aguafina Script',  */ /* 'Oleo Script' *//* ,cursive; */ 
+    color:#FFF;
+    text-shadow:0 5px 15px black;
+    font-size: 2em;
+    padding-top: 10%;
+}
+
+
+
+
+.card-header{
+    margin:0 !important;
+    padding:0 !important;
+}
+
+
+.btn {
+
+    margin:0 !important;
+    padding:0 !important;
+
+}
+ .card {
+
+     background-color:black !important;
+     color:#fff;
+ }
+
+.card-body .hotel-description{
+    font-size: 1.2em !important;
+    font-family: 'Kodchasan', sans-serif;
+    
+
+
+
+
+}
+
+
+
 #hotelselectionpage{
 
     width:80%;
     margin-left:10%;
 
 }
+
 
 @media only screen and (min-width:900px){
 
@@ -61,7 +103,7 @@ h5{
     font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script',  *//* ' Aguafina Script',  */ /* 'Oleo Script' *//* ,cursive; */ 
     color:#FFF;
     text-shadow:0 5px 15px black;
-    font-size:6vw;
+    font-size:2em;
     padding-top: 5%;
     padding-bottom:5%;
     text-align: center;
@@ -71,22 +113,18 @@ h5{
     
 }
 
-.hotelpage-titles{
 
-    border:1px solid white;
-   
-}
 
 
 .hotel-pic-caption{
     position:absolute; 
-    padding-top:18vw;   
+    padding-top:70px;   
     color:#FFF;
-    font-size:7vw;
-    line-height:7vw;
+    font-size:2.5em;
+    line-height:2em;
     opacity:0.5;
     z-index:1;
-    font-family: 'Kodchasan', sans-serif;  /* 'Bad Script' *//* , */ /* 'Nova Script', */ /* ' Aguafina Script',  *//*  'Oleo Script', *//* , *//* cursive */; 
+    font-family: /* ' Aguafina Script', */ 'Oleo Script' ; 
     
 }
 

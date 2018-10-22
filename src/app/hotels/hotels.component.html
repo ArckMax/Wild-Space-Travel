@@ -12,5 +12,13 @@
         </ul>
 
       <div *ngIf="selectedHotel"> 
-  </div>    
+          <h2>{{selectedHotel.name | uppercase}} Details</h2>
+          <div><span>id: </span>{{selectedHotel.id}}</div>
+          <div>
+            <label>name:
+              <input [(ngModel)]="selectedHotel.name" placeholder="name">
+            </label>
+          </div>    
+      </div>
+  </div>
 </div>

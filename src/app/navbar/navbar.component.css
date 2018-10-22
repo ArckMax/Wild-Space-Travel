@@ -12,7 +12,7 @@ a{
     color: #FFF;    
     border: none;
     font-family: "newSpace",'Courier New', Courier, monospace;
-    font-size:4vw;
+    font-size:1.2em;
     transition: all 0.5s;
     
 
@@ -27,6 +27,7 @@ a:hover{
 
     background-color: black !important;
 
+
 }
 
 
@@ -35,26 +36,26 @@ a:hover{
     font-family: "newSpace";
     color: #FFF;
     text-shadow:0 5px 15px white;
-    font-size:5vw;  
-    margin-top:2vw;
+    font-size:3em;  
+    margin-top:0;
+    margin-left: 5%;
+   /*  height:60px; */
    
 
 }
 
 .text-muted{
 
-    font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script', 'Aguafina Script', 'Oleo Script',cursive */; 
-    font-size:3vw;
+    font-family: 'Kodchasan', sans-serif; 
+    font-size:1em;
     margin-top:0;
-    margin-left:2vw;
 
 }
 
 .navbar-toggler{
-    float:left;
-    margin-top:2vw;
-    margin-right:2vw;
-    height: 0;
+ 
+    margin-top:0;
+    height: 100px;
     outline:none;
     border: none;
 
@@ -62,16 +63,13 @@ a:hover{
 
 
 
-
-
 /*  ----menu burger -----*/
 
 .container {
     display: inline-block;
-    cursor: pointer;
-    
-   
+    cursor: pointer; 
 }
+
 .burger{
 
     width:2vw;
