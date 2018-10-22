@@ -5,26 +5,32 @@
   <div class="d-none d-lg-inline-block col-8 align-top text-center box-container">
 
     <h2>Current planet selection</h2>
-    <div class="col-12">
+    <div class="col-12" *ngIf="currentSelectedPlanet.pl_name == 'No Planet choosen'">
+      <h2>Please choose a planet for your travel</h2>
+    </div>
+    <div class="col-12" *ngIf="currentSelectedPlanet.pl_name != 'No Planet choosen'">
       <img src="/src/assets/img/earth-1151659_1920.jpg">
       <div class=" text-center">
-        
+
         <ul>
-          <li><h2>Kepler-881 b</h2></li>
-          <li class="display-info"><strong>Distance to Earth: </strong> 1364 parsec</li>
-          <li class="display-info"><strong>Climat  : </strong> Electrical storm</li>
+          <li>
+            <h2>{{currentSelectedPlanet.pl_name}}</h2>
+          </li>
+          <li class="display-info"><strong>Distance to Earth: </strong> {{currentSelectedPlanet.st_dist}} parsec</li>
+          <li class="display-info"><strong>Climat : </strong> Electrical storm</li>
           <li class="display-info"><strong>Weight : </strong> 125 Earth</li>
         </ul>
       </div>
     </div>
-    
-    <button (click)="getChosenPlanet()" [routerLink]="['/shipchoice',userSettings.budget,userSettings.distance]">Chose this planet ! </button>
+
+    <button (click)="getChosenPlanet()" [routerLink]="['/shipchoice',userSettings.budget,userSettings.distance,currentSelectedPlanet.pl_name]"
+      *ngIf="currentSelectedPlanet.pl_name != 'No Planet choosen'">Choose this planet ! </button>
   </div>
 
 
   <div class="col-12 col-lg-4 container-fluid d-inline-block text-center">
-    <div class= "bloc-list-planets">
-      <app-planet-list></app-planet-list>
+    <div class="bloc-list-planets">
+      <app-planet-list (SelectedPlanetChange)="SelectedPlanetChangeHandler($event)"></app-planet-list>
     </div>
   </div>
 

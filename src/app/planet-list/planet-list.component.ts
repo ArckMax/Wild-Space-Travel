@@ -3,6 +3,8 @@ import { PlanetService } from '../planet.service';
 import { PlanetInfo } from '../planet-info';
 import { Observable } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
+import { Output, EventEmitter  } from '@angular/core';
+
 
 @Component({
   selector: 'app-planet-list',
@@ -11,10 +13,17 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PlanetListComponent implements OnInit {
 
+  // Selection of planet initialization 
+ 
+  @Output() SelectedPlanetChange:EventEmitter<PlanetInfo> = new EventEmitter();
+
+  public selection( current:PlanetInfo ){
+    this.SelectedPlanetChange.emit(current);
+  }
+
   // Service initialization
 
   private service:PlanetService;
-
   public list:PlanetInfo[];
 
   // URL Reading initialization
@@ -24,6 +33,8 @@ export class PlanetListComponent implements OnInit {
     "budget": 0,
     "distance":""
   }
+  public distMin:number;
+  public distMax:number;
 
   // Service Injection + ActivatedRoute Injection 
 
@@ -37,7 +48,7 @@ export class PlanetListComponent implements OnInit {
 
   ngOnInit() {
     
-    const obs:Observable<PlanetInfo[]> = this.service.getPlanets(1000, 1500);
+    const obs:Observable<PlanetInfo[]> = this.service.getPlanets();
     // const obs:Observable<PlanetInfo[]> = this.service.getPlanets(Number(this.userSettings.distance.split("-")[0]), Number(this.userSettings.distance.split("-")[1]));
 
 
@@ -50,9 +61,9 @@ export class PlanetListComponent implements OnInit {
     this.sub=this._Activatedroute.params.subscribe(params => { 
       this.userSettings.budget = params['budget']; 
       this.userSettings.distance = params["distance"];
+      this.distMin=Number(this.userSettings.distance.split("-")[0]);
+      this.distMax=Number(this.userSettings.distance.split("-")[1]);
     });
-    
-    // console.log(typeof Number(this.userSettings.distance.split("-")[0]));
   }
 
 }

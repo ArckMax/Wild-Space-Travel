@@ -1,8 +1,8 @@
 <div class="ship-list-box container-fluid">
-  <div class="ship-box" *ngFor="let current of ships" >
+  <div class="ship-box" *ngFor="let current of ships" (click)="selection(current)" >
     <img src="{{current.img}}">
     <p id="list-title-ship">{{current.name}}</p>
     <p class="list-title-ship-price">Price per passenger : {{current.price}}</p>
-    <button class="d-lg-none" [routerLink]="['/summary',userSettings.budget/userSettings.distance]" routerLinkActive="router-link-active" >Chose this ship</button>
+    <button class="d-lg-none" [routerLink]="['/summary',userSettings.budget,userSettings.distance,userSettings.SelectedPlanet, current.name]" routerLinkActive="router-link-active" >Chose this ship</button>
   </div>
 </div>

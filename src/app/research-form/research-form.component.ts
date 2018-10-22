@@ -38,11 +38,13 @@ export class ResearchFormComponent {
   //  Distance choices
 
   distances: Distance[] = [
-    {value: '0-500', viewValue: '0-500'},
-    {value: '500-1000', viewValue: '500-1000'},
-    {value: '1000-1500', viewValue: '1000-1500'},
-    {value: '1500-2000', viewValue: '1500-2000'},
-    {value: '2000-XXXX', viewValue: '2000-XXXX'},
+    {value: '0-200', viewValue: '0-200'},
+    {value: '200-400', viewValue: '200-400'},
+    {value: '400-600', viewValue: '400-600'},
+    {value: '600-800', viewValue: '600-800'},
+    {value: '800-1000', viewValue: '800-1000'},
+    {value: '1000-1200', viewValue: '1000-1200'},
+    {value: '1200-1400', viewValue: '1200-1400'}
   ];
 
   // Function to formalize into an object informations choosen by user
