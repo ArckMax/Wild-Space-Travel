@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrendComponent implements OnInit {
 
+  // title1:string = "Loic n'écoute jamais en cours";
+  // title2:string = "Je Suis le plus beau ";
+  // title3:string = "lool";
+
   viewImage1:boolean = false;
   viewImage2:boolean = false;
   viewImage3:boolean = false;
