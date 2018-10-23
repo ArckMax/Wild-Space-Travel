@@ -16,12 +16,12 @@ export class HotelsComponent implements OnInit {
   selectedHotel:Hotel = {
     name:"no_hotel_defined",
     price:0,
-    img:""
+    img:"",
+    priceRange:"",
+    rating:0
   };
 
   
-  
-
   constructor() { }
 
   ngOnInit() {
