@@ -15,7 +15,8 @@ public userSettings:any={
   "budget": 0,
   "distance":"",
   "SelectedPlanet":"",
-  "SelectedShip":""
+  "SelectedShip":"",
+  "SelectedHotel":""
 }
 
 // ShipService & ActivatedRoute Injections
@@ -30,7 +31,7 @@ ngOnInit() {
     this.userSettings.SelectedPlanet = params["SelectedPlanet"];
     this.userSettings.SelectedShip = params["SelectedShip"]
   });
-  console.log(this.userSettings.budget);
+  
 }
 
 }

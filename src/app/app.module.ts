@@ -44,7 +44,9 @@ const appRoutes: Routes = [
   {path:"hotelselection", component:HotelSelectionComponent},
   {path:"planetchoice/:budget/:distance", component:PlanetchoiceComponent},  
   {path:"shipchoice/:budget/:distance/:SelectedPlanet", component:ShipchoiceComponent},
-  {path:"summary/:budget/:distance/:SelectedPlanet/:SelectedShip", component:SummaryComponent}
+  {path:"summary/:budget/:distance/:SelectedPlanet/:SelectedShip", component:SummaryComponent},
+  {path:"hotelpage/:budget/:distance/:SelectedPlanet/:SelectedShip", component:HotelSelectionComponent},
+  {path:"summaryWithHotel/:budget/:distance/:SelectedPlanet/:SelectedShip/:hotel", component:SummaryComponent},
 ]
 
 
