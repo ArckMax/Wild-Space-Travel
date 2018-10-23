@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -22,7 +21,6 @@ import { ResearchFormComponent } from './research-form/research-form.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlanetListComponent } from './planet-list/planet-list.component';
 import { ShipListComponent } from './ship-list/ship-list.component';
-import { CurrentPlanetComponent } from './current-planet/current-planet.component';
 import { HotelSelectionComponent } from './hotel-selection/hotel-selection.component';
 import { LoadingPageComponent } from './loading-page/loading-page.component';
 import { HotelsComponent } from './hotels/hotels.component';
@@ -32,6 +30,7 @@ import { TrendComponent } from './trend/trend.component';
 
 import { ShipsService } from './ships.service';
 import { PlanetService } from "./planet.service";
+import { PriceRangePipe } from './price-range.pipe';
 
 
 
@@ -42,8 +41,10 @@ const appRoutes: Routes = [
   {path:"planetchoice", component:PlanetchoiceComponent},
   {path:"homepage/planetchoice", component:PlanetchoiceComponent},
   {path:"", redirectTo:"homepage", pathMatch:"full"},
-  {path:"hotelselection", component:HotelSelectionComponent}
-  
+  {path:"hotelselection", component:HotelSelectionComponent},
+  {path:"planetchoice/:budget/:distance", component:PlanetchoiceComponent},  
+  {path:"shipchoice/:budget/:distance/:SelectedPlanet", component:ShipchoiceComponent},
+  {path:"summary/:budget/:distance/:SelectedPlanet/:SelectedShip", component:SummaryComponent}
 ]
 
 
@@ -60,12 +61,12 @@ const appRoutes: Routes = [
     FooterComponent,
     PlanetListComponent,
     ShipListComponent,
-    CurrentPlanetComponent,
     HotelSelectionComponent,
     LoadingPageComponent,
     HotelsComponent,
     TrendPlaneteComponent,
     TrendComponent,
+    PriceRangePipe,
     
   ],
   imports: [

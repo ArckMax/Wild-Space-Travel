@@ -1,4 +1,27 @@
 
+#hotelselectionpage{
+
+    width:80%;
+    margin-left:10%;
+
+}
+
+@media only screen and (min-width:900px){
+
+    #hotelselectionpage{
+
+        width:50%;
+        margin-left:25%;
+        
+    
+    }
+
+}
+
+
+
+
+
 
 .hotel-img-container{
     position:relative;
@@ -40,6 +63,7 @@ h5{
     text-shadow:0 5px 15px black;
     font-size:6vw;
     padding-top: 5%;
+    padding-bottom:5%;
     text-align: center;
     
     
@@ -47,12 +71,19 @@ h5{
     
 }
 
+.hotelpage-titles{
+
+    border:1px solid white;
+   
+}
+
 
 .hotel-pic-caption{
     position:absolute; 
-    padding-top:20vw;   
+    padding-top:18vw;   
     color:#FFF;
-    font-size:8vw;
+    font-size:7vw;
+    line-height:7vw;
     opacity:0.5;
     z-index:1;
     font-family: 'Kodchasan', sans-serif;  /* 'Bad Script' *//* , */ /* 'Nova Script', */ /* ' Aguafina Script',  *//*  'Oleo Script', *//* , *//* cursive */; 
@@ -77,16 +108,11 @@ h5{
 }
 
 
-.carousel-caption {
-
-    padding:10vw;
-
-}
 
 
-.carousel-caption p{
+.carousel-caption h5{
 
-    font-size:10vw;
-    opacity:0.6;
+    font-size:5vw;
+
 
 }

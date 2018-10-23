@@ -3,11 +3,11 @@
   <!-- Budget input  -->
 
   <mat-form-field class="example-full-width research-form-inputs text-center">
-    <input matInput placeholder="Maximum budget" name="budget" [(ngModel)]="budget" value="{{budget}}" required>
+    <input matInput placeholder="BUDGET MAX" name="budget" [(ngModel)]="budget" value="{{budget}}" required>
   </mat-form-field>
 
   <mat-form-field class="d-block text-center research-form-inputs">
-    <mat-select placeholder="Distance" [(ngModel)]="distance" required>
+    <mat-select placeholder="DISTANCE" [(ngModel)]="distance" required>
       <mat-option *ngFor="let distance of distances"  [value]="distance.value">
         {{distance.viewValue}}
       </mat-option>
@@ -15,13 +15,13 @@
   </mat-form-field>
 
   <mat-form-field class="example-full-width research-form-inputs text-center">
-    <input matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="date">
+    <input matInput [matDatepicker]="picker" placeholder="DATE" [(ngModel)]="date">
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker touchUi #picker [(ngModel)]="roomsFilter.date"  ngDefaultControl (selectedChanged)="onChange($event)"></mat-datepicker>
   </mat-form-field>
     
 
-  <button mat-stroked-button (click)="getInfo()" class="research-form-button">SEARCH MY TRIP</button>
+  <a mat-stroked-button *ngIf="budget!=undefined && distance!=undefined && date != undefined" (click)="getInfo()" class="research-form-button" [routerLink]="['/planetchoice', budget,distance]">SEARCH MY TRIP</a>
 
 </div>
 

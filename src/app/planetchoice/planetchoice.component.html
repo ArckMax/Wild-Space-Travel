@@ -1,17 +1,32 @@
-<div class="container-fluid">
+<div class="container-fluid text-center">
   <h1 class="pagetitle">Planet selection</h1>
-  <div class="col-8 d-inline-block">
-    <app-current-planet class=" align-top"></app-current-planet>
-    <button>Chose this planet ! </button>
+  <h4 *ngIf="userSettings.distance != undefined" class="text-center">Your distance choice : {{userSettings.distance}} parsecs</h4>
+
+  <div class="col-12 container-fluid d-inline-block text-center bloc-list-planets">
+      <app-planet-list (SelectedPlanetChange)="SelectedPlanetChangeHandler($event)"></app-planet-list>
   </div>
 
 
-  <div class="col-4 container-fluid d-inline-block text-center">
-    <div class="fa fa-arrow-up"></div>
-    <div class= "bloc-list-planets">
-      <app-planet-list></app-planet-list>
+  <div class="d-none d-lg-inline-block col-12 align-top text-center box-container">
+
+    <h2 *ngIf="currentSelectedPlanet.pl_name != 'No Planet choosen'">{{currentSelectedPlanet.pl_name}}</h2>
+    <div class="col-12" *ngIf="currentSelectedPlanet.pl_name == 'No Planet choosen'">
+      <h2>Please choose a planet for your travel</h2>
     </div>
-    <div class="fa fa-arrow-down"></div>
+    
+    <div class="col-12 container" *ngIf="currentSelectedPlanet.pl_name != 'No Planet choosen'">
+      <img class="col-5 d-inline-block" src="/src/assets/img/earth-1151659_1920.jpg">
+      <div class=" text-center d-inline-block col-7">
+        <ul>
+          <li class="display-info"><strong>Distance to Earth: </strong> {{currentSelectedPlanet.st_dist}} parsec</li>
+          <li class="display-info"><strong>Climat : </strong> Electrical storm</li>
+          <li class="display-info"><strong>Weight : </strong> 125 Earth</li>
+        </ul>
+      </div>
+    </div>
+
+    <button (click)="getChosenPlanet()" [routerLink]="['/shipchoice',userSettings.budget,userSettings.distance,currentSelectedPlanet.pl_name]"
+      *ngIf="currentSelectedPlanet.pl_name != 'No Planet choosen'">Choose this planet ! </button>
   </div>
 
 </div>

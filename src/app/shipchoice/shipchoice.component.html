@@ -1,23 +1,37 @@
 <div class="container-fluid text-center">
-  <h1>Ship selection</h1>
-  <div class="col-8 d-inline-block align-top text-center box-container">
-    <h2>Current ship selection</h2>
-    <div class="col-12">
-        <img src="/src/assets/img/millenium-falcon-1627322_1920.jpg" alt="Current ship" id="current-ship">
-        <div class="display-info">Ship : Wasp</div>
-        <div class="display-info">Engines : 2</div>
-        <div class="display-info"> nbPlaces : 25000</div>
-        <div class="display-info"> Price : 499€</div>
-        <div class="display-info"> Infomations : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, earum. Voluptas cupiditate similique magni nobis fugit, neque quia temporibus, quaerat ex perspiciatis omnis necessitatibus, recusandae pariatur ratione? Perferendis, repudiandae. Sint.</div>
-    </div>
+  <h1 class="pagetitle">Ship selection</h1>
+  <h4 *ngIf="userSettings.budget != undefined" class="text-center">Your Maximum budget : {{userSettings.budget}}</h4>
+
+  <div class="bloc-list-ships col-12 d-inline-block text-center list-column container-fluid">
+    <app-ship-list (SelectedShipChange)="SelectedShipChangeHandler($event)"></app-ship-list>
   </div>
 
-  <div class="col-4 d-inline-block text-center list-column">
-    <h2>Ship List</h2>
-    <div class= "bloc-list-ships">
-      <app-ship-list></app-ship-list>
+  <div class="d-none d-lg-inline-block col-12 align-top text-center box-container">
+    <h2 *ngIf="currentSelectedShip.name != 'No ship choosen'">{{currentSelectedShip.name | uppercase}}</h2>
+    <div class="col-12" *ngIf="currentSelectedShip.price == 0">
+      <h2>Please choose a Ship for your travel</h2>
     </div>
+
+    
+    <div class="col-12 row align-top" *ngIf="currentSelectedShip.price != 0">
+      <img class="col-5 d-inline-block" [src]="currentSelectedShip.img" alt="Current ship" id="current-ship">
+      <div class="text-center d-inline-block col-7">
+        <ul>
+          <li class="display-info"><strong>Ship: </strong>{{currentSelectedShip.name}}</li>
+          <li class="display-info"><strong>Engines : </strong>{{currentSelectedShip.nbEngine}}</li>
+          <li class="display-info"><strong>Wings : </strong>{{currentSelectedShip.nbWing}}</li>
+          <li class="display-info"><strong>Places : </strong>{{currentSelectedShip.nbPlaces}}</li>
+          <li class="display-info"><strong>Price : </strong>{{currentSelectedShip.price}}</li>
+          <li class="display-info"><strong>Infomations :</strong>Can contain Wookies, Clones or others. In case of Sith infestation, do
+              not try to escape without having put beforehand a combination.</li>
+        </ul>
+      </div>
+
+    </div>
+    <button class="d-none d-lg-inline-block" [routerLink]="['/summary', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, currentSelectedShip.name]"
+      routerLinkActive="router-link-active" *ngIf="currentSelectedShip.price != 0">Choose this ship</button>
   </div>
 
-  <button>Chose this ship</button>
+
+
 </div>
