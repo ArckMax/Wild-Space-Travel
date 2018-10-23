@@ -1,9 +1,25 @@
 .planet-box{
     background-color: rgba(500, 500, 500, 0.6);
-    width: 100%;
-    margin-top:5vw;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border:2px solid black;
+    border-radius:25px;
+}
+
+.inside-planet-box-wrap{
+    width: 250px;
+}
+
+.planet-box:hover{
+    border : 2px solid white;
+    transition: all 0.5s
+
 }
 
 img{
     width: 100%;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
 }
+

@@ -14,7 +14,7 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
     color:#fff;
     font-size:8vw;
     text-align: center;
-    padding:5vw;
+    padding:2vw;
     font-family:"Kodchasan", Arial, Helvetica, sans-serif;
 }
 .box-container{
@@ -23,3 +23,11 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
     padding : 10px 0;
 }
 
+.phone-choose-button{
+    width: 60%;
+    max-height: 50px;
+    background-color: black;
+    margin: 10px 10px;
+    color:#fff;
+    font-family: 'Kodchasan', sans-serif;
+}
