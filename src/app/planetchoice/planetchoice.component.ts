@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { PlanetInfo } from '../planet-info';
 
 @Component({
   selector: 'app-planetchoice',
@@ -8,11 +9,21 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PlanetchoiceComponent implements OnInit {
 
+  public currentSelectedPlanet:PlanetInfo={
+    pl_name:"No Planet choosen",
+    st_dist:0
+  }
+
+  SelectedPlanetChangeHandler(SelectedPlanet:PlanetInfo){
+    this.currentSelectedPlanet.pl_name = SelectedPlanet.pl_name;
+    this.currentSelectedPlanet.st_dist = SelectedPlanet.st_dist;
+  }
+
   private getChosenPlanet(){
     this.userSettings.chosenPlanet = this;
   }
 
-sub;
+public sub;
 
 public userSettings:any={
   "budget": 0,

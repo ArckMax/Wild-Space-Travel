@@ -28,6 +28,8 @@ import { HotelsComponent } from './hotels/hotels.component';
 
 import { ShipsService } from './ships.service';
 import { PlanetService } from "./planet.service";
+import { PriceRangePipe } from './price-range.pipe';
+import { HotelPriceRangePipe } from './hotel-price-range.pipe';
 
 
 const appRoutes: Routes = [
@@ -39,8 +41,8 @@ const appRoutes: Routes = [
   {path:"", redirectTo:"homepage", pathMatch:"full"},
   {path:"hotelselection", component:HotelSelectionComponent},
   {path:"planetchoice/:budget/:distance", component:PlanetchoiceComponent},  
-  {path:"shipchoice/:budget/:distance", component:ShipchoiceComponent},
-  {path:"summary/:budget/:distance", component:SummaryComponent}
+  {path:"shipchoice/:budget/:distance/:SelectedPlanet", component:ShipchoiceComponent},
+  {path:"summary/:budget/:distance/:SelectedPlanet/:SelectedShip", component:SummaryComponent}
 ]
 
 
@@ -60,6 +62,8 @@ const appRoutes: Routes = [
     HotelSelectionComponent,
     LoadingPageComponent,
     HotelsComponent,
+    PriceRangePipe,
+    HotelPriceRangePipe,
     
   ],
   imports: [

@@ -5,23 +5,25 @@
   <div class="d-none d-lg-inline-block col-8 align-top text-center box-container">
     
     <h2>Current ship selection</h2>
-    <div class="col-12">
-      <img src="/src/assets/img/millenium-falcon-1627322_1920.jpg" alt="Current ship" id="current-ship">
-      <div class="display-info">Ship : Millenium Falcon</div>
-      <div class="display-info">Engines : 2</div>
-      <div class="display-info"> nbPlaces : 500</div>
-      <div class="display-info"> Price : 7500</div>
+    <div class="col-12" *ngIf="currentSelectedShip.price == 0"><h2>Please choose a Ship for your travel</h2></div>
+    <div class="col-12" *ngIf="currentSelectedShip.price != 0">
+      <img [src]="currentSelectedShip.img" alt="Current ship" id="current-ship">
+      <div class="display-info">Ship : {{currentSelectedShip.name}}</div>
+      <div class="display-info">Engines : {{currentSelectedShip.nbEngine}}</div>
+      <div class="display-info">Wings : {{currentSelectedShip.nbWing}}</div>
+      <div class="display-info"> nbPlaces : {{currentSelectedShip.nbPlaces}}</div>
+      <div class="display-info"> Price : {{currentSelectedShip.price}}</div>
       <div class="display-info"> Infomations :Can contain Wookies, Clones or others. In case of Sith infestation, do
         not try to escape without having put beforehand a combination.</div>
     </div> 
-    <button class="d-none d-lg-inline-block" [routerLink]="['/summary', userSettings.budget, userSettings.distance]"
-    routerLinkActive="router-link-active">Chose this ship</button>
+    <button class="d-none d-lg-inline-block" [routerLink]="['/summary', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, currentSelectedShip.name]"
+    routerLinkActive="router-link-active" *ngIf="currentSelectedShip.price != 0">Choose this ship</button>
   </div>
 
   <div class="col-12 col-lg-4 d-inline-block text-center list-column">
    <!--  <h2>Ship List</h2> -->
     <div class="bloc-list-ships">
-      <app-ship-list></app-ship-list>
+      <app-ship-list (SelectedShipChange)="SelectedShipChangeHandler($event)"></app-ship-list>
     </div>
   </div>
 

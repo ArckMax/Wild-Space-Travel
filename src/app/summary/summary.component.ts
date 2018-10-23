@@ -13,7 +13,9 @@ export class SummaryComponent implements OnInit {
 private sub;
 public userSettings:any={
   "budget": 0,
-  "distance":""
+  "distance":"",
+  "SelectedPlanet":"",
+  "SelectedShip":""
 }
 
 // ShipService & ActivatedRoute Injections
@@ -25,6 +27,8 @@ ngOnInit() {
    this.sub=this._Activatedroute.params.subscribe(params => { 
     this.userSettings.budget = params['budget']; 
     this.userSettings.distance = params["distance"];
+    this.userSettings.SelectedPlanet = params["SelectedPlanet"];
+    this.userSettings.SelectedShip = params["SelectedShip"]
   });
   console.log(this.userSettings.budget);
 }

@@ -15,8 +15,7 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
     font-size:8vw;
     text-align: center;
     padding:5vw;
-    font-family:"newSpace", Arial, Helvetica, sans-serif;
-    opacity:0.8;
+    font-family:"Kodchasan", Arial, Helvetica, sans-serif;
 }
 .box-container{
     border: 1px solid rgba(500, 500, 500, 0.4);
