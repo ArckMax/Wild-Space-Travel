@@ -28,7 +28,7 @@
       </div>
 
     </div>
-    <button class="d-none d-lg-inline-block" [routerLink]="['/summary', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, currentSelectedShip.name]"
+    <button class="d-none d-lg-inline-block" (click)="goTop()" [routerLink]="['/summary', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, currentSelectedShip.name]"
       routerLinkActive="router-link-active" *ngIf="currentSelectedShip.price != 0">Choose this ship</button>
   </div>
 

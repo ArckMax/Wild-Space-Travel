@@ -54,4 +54,14 @@ export class ShipListComponent implements OnInit {
     console.log(this.userSettings.budget);
   }
   
+  goTop() {
+    let scrollToTop = window.setInterval(() => {
+      let pos = window.pageYOffset;
+      if (pos > 150) {
+        window.scrollTo(0, pos - 50); // how far to scroll on each step
+      } else {
+        window.clearInterval(scrollToTop);
+      }
+    },16)
+  }
 }

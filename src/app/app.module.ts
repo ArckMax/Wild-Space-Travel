@@ -30,6 +30,7 @@ import { ShipsService } from './ships.service';
 import { PlanetService } from "./planet.service";
 import { PriceRangePipe } from './price-range.pipe';
 import { HotelPriceRangePipe } from './hotel-price-range.pipe';
+import { ShipSortbyPricePipe } from './ship-sortby-price.pipe';
 
 
 const appRoutes: Routes = [
@@ -64,6 +65,7 @@ const appRoutes: Routes = [
     HotelsComponent,
     PriceRangePipe,
     HotelPriceRangePipe,
+    ShipSortbyPricePipe,
     
   ],
   imports: [
