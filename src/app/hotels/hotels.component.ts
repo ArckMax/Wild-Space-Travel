@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Hotel } from '../hotel';
 import { HOTELS } from '../mock-hotels';
@@ -12,15 +13,21 @@ export class HotelsComponent implements OnInit {
 
 
   hotels = HOTELS;
-  selectedHotel = Hotel;
-  
+  selectedHotel:Hotel = {
+    name:"no_hotel_defined",
+    price:0,
+    img:"",
+    priceRange:"",
+    rating:0
+  };
 
+  
   constructor() { }
 
   ngOnInit() {
   }
 
   onSelect(hotel : Hotel):void{
-    this.selectedHotel = Hotel;
+    this.selectedHotel = hotel;
   }
 }

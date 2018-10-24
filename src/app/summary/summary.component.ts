@@ -29,7 +29,8 @@ ngOnInit() {
     this.userSettings.budget = params['budget']; 
     this.userSettings.distance = params["distance"];
     this.userSettings.SelectedPlanet = params["SelectedPlanet"];
-    this.userSettings.SelectedShip = params["SelectedShip"]
+    this.userSettings.SelectedShip = params["SelectedShip"];
+    this.userSettings.SelectedHotel = params["SelectedHotel"];
   });
   
 }

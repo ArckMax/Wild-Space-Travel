@@ -9,11 +9,13 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class TrendPlaneteComponent implements OnInit {
 
-  // @Input()
-  //   public externalTitle:string;
+  @Input()
+  public externalTitle:string;
 
 
-  constructor() { }
+  constructor() { 
+    this.externalTitle = "waiting";
+  }
 
   ngOnInit() {
   }

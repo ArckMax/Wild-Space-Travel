@@ -31,6 +31,7 @@ import { TrendComponent } from './trend/trend.component';
 import { ShipsService } from './ships.service';
 import { PlanetService } from "./planet.service";
 import { PriceRangePipe } from './price-range.pipe';
+import { HotelPriceRangePipe } from './hotel-price-range.pipe';
 
 
 
@@ -47,6 +48,10 @@ const appRoutes: Routes = [
   {path:"summary/:budget/:distance/:SelectedPlanet/:SelectedShip", component:SummaryComponent},
   {path:"hotelpage/:budget/:distance/:SelectedPlanet/:SelectedShip", component:HotelSelectionComponent},
   {path:"summaryWithHotel/:budget/:distance/:SelectedPlanet/:SelectedShip/:hotel", component:SummaryComponent},
+  {path:"trend1/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
+  {path:"trend2/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
+  {path:"trend3/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent}
+
 ]
 
 
@@ -69,6 +74,7 @@ const appRoutes: Routes = [
     TrendPlaneteComponent,
     TrendComponent,
     PriceRangePipe,
+    HotelPriceRangePipe,
     
   ],
   imports: [
