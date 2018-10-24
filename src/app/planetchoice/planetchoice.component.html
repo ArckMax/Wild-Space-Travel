@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <button (click)="getChosenPlanet()" [routerLink]="['/shipchoice',userSettings.budget,userSettings.distance,currentSelectedPlanet.pl_name]"
+    <button (click)="goTop()" [routerLink]="['/shipchoice',userSettings.budget,userSettings.distance,currentSelectedPlanet.pl_name]"
       *ngIf="currentSelectedPlanet.pl_name != 'No Planet choosen'">Choose this planet ! </button>
   </div>
 

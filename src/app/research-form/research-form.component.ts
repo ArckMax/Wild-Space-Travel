@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { InfoTrip } from '../info-trip';
 
 export interface Price {
@@ -19,10 +19,10 @@ export interface Distance {
 
 export class ResearchFormComponent {
 
-  obj:InfoTrip;
+  obj: InfoTrip;
 
   //Variable & Function to access to date
-  
+
   roomsFilter: any = {};
   public onChange(event: any, newDate: any): void {
     console.log(event);
@@ -30,33 +30,41 @@ export class ResearchFormComponent {
   };
 
   // Object prototype to formalize info on a trip 
-  
-  budget:number;
-  distance:string;
-  date:string;
+
+  budget: number;
+  distance: string;
+  date: string;
 
   //  Distance choices
 
   distances: Distance[] = [
-    {value: '0-200', viewValue: '0-200'},
-    {value: '200-400', viewValue: '200-400'},
-    {value: '400-600', viewValue: '400-600'},
-    {value: '600-800', viewValue: '600-800'},
-    {value: '800-1000', viewValue: '800-1000'},
-    {value: '1000-1200', viewValue: '1000-1200'},
-    {value: '1200-1400', viewValue: '1200-1400'}
+    { value: '0-200', viewValue: '0-200' },
+    { value: '200-400', viewValue: '200-400' },
+    { value: '400-600', viewValue: '400-600' },
+    { value: '600-800', viewValue: '600-800' },
+    { value: '800-1000', viewValue: '800-1000' },
+    { value: '1000-1200', viewValue: '1000-1200' },
+    { value: '1200-1400', viewValue: '1200-1400' }
   ];
 
   // Function to formalize into an object informations choosen by user
   // Temporarely console.log this object. 
   // This object need to be accessible everywhere on website
   // IDEA => SHOW A RESUME OF SETTINGS JUST UNDER THE NAVBAR, EVERYTIME
-  
-   getInfo(infoTrip):void{
+
+
+  getInfo(infoTrip): void {
+    let scrollToTop = window.setInterval(() => {
+      let pos = window.pageYOffset;
+      if (pos > 150) {
+        window.scrollTo(0, pos - 50); // how far to scroll on each step
+      } else {
+        window.clearInterval(scrollToTop);
+      }
+    },16)
     this.obj = new InfoTrip(this.budget, this.distance, this.date);
-    console.log(this.obj);
+    console.log("User settings are : " + this.obj.budget);
   };
-
-
 }
+
 

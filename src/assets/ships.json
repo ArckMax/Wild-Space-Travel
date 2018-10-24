@@ -43,7 +43,7 @@
     "name": "Mondoshawan Vessel",
     "nbEngine" : 15,
     "nbWing" : 6,
-    "price" : 5000,
+    "price" : 2500,
     "nbPlaces" : 250000,
     "img" : "src/assets/img/mondoshawan.jpg"
   },
@@ -51,7 +51,7 @@
     "name": "Nostromo",
     "nbEngine" : 8,
     "nbWing" : 6,
-    "price" : 5000,
+    "price" : 4200,
     "nbPlaces" : 80,
     "img" : "src/assets/img/nostromo.jpg"
   },
@@ -86,5 +86,30 @@
     "price" : 7500,
     "nbPlaces" : 5,
     "img" : "src/assets/img/spaceship-1707016.jpg"
+  },
+  {
+    "name": "Rhino",
+    "nbEngine" : 1,
+    "nbWing" : 2,
+    "price" : 750,
+    "nbPlaces" : 250,
+    "img" : "src/assets/img/air1.jpg"
+  },
+  {
+    "name": "Quartz",
+    "nbEngine" : 18,
+    "nbWing" : 22,
+    "price" : 150,
+    "nbPlaces" : 150000,
+    "img" : "src/assets/img/air2.jpg"
+  },
+  {
+    "name": "Atlantis",
+    "nbEngine" : 2,
+    "nbWing" : 2,
+    "price" : 12500,
+    "nbPlaces" : 10000,
+    "img" : "src/assets/img/air3.jpg"
   }
+  
 ]
