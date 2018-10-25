@@ -4,22 +4,32 @@
 
   <div>
     <div class="summary-planet-choice-box col-12 col-lg-4 d-inline-block align-top">
-      <h1 class="pagetitle">Destination</h1>
+      <h1 class="pagetitle d-none d-lg-inline-block">Destination</h1>
       <img src="/src/assets/img/earth-1151659_1920.jpg">
-      <h1>{{userSettings.SelectedPlanet}}</h1>
+
 
     </div>
 
-    <div class="summary-options-box col-12 col-lg-4 d-inline-block align-top">
-
-
+    <div class="col-12 col-lg-4 d-inline-block align-top text-center container-fluid">
+      <h1 class="pagetitle col-12 d-none d-lg-inline-block">Informations</h1>
+      <div class="col-12 col-lg-5 d-inline-block align-top info-box">
+        <p class="info-box-title">{{userSettings.SelectedPlanet}}</p>
+        <p>Distance to Earth : {{userSettings.distance}}</p>
+      </div>
+      <div class="col-12 col-lg-5 offset-lg-1 d-inline-block align-top info-box">
+        <p class="info-box-title">{{userSettings.SelectedShip}}</p>
+        <p>Price per person : {{userSettings.budget}}</p>
+      </div>
     </div>
 
     <div class="summary-ship-choice-box col-12 col-lg-4 d-inline-block align-top">
-      <h1 class="pagetitle">Ship</h1>
+      <h1 class="pagetitle d-none d-lg-inline-block">Ship</h1>
       <img src="/src/assets/img/millenium-falcon-1627322_1920.jpg" alt="Current ship" id="current-ship">
-      <h1>{{userSettings.SelectedShip}}</h1>
+
     </div>
   </div>
 </div>
+<button *ngIf="userSettings.selectedHotel == undefined" [routerLink]="['/hotelpage', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, userSettings.SelectedShip]"
+  routerLinkActive="router-link-active"> GO TO HOTEL PAGE </button>
+<div *ngIf="userSettings.selectedHotel != undefined " class="hotel-selection-box">{{userSettings.SelectedHotel}}</div>
 <button class="skew-button"><span>Proceed to payment</span></button>

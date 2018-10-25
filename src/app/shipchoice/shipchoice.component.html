@@ -17,7 +17,6 @@
       <img class="col-5 d-inline-block" [src]="currentSelectedShip.img" alt="Current ship" id="current-ship">
       <div class="text-center d-inline-block col-7">
         <ul>
-          <li class="display-info"><strong>Ship: </strong>{{currentSelectedShip.name}}</li>
           <li class="display-info"><strong>Engines : </strong>{{currentSelectedShip.nbEngine}}</li>
           <li class="display-info"><strong>Wings : </strong>{{currentSelectedShip.nbWing}}</li>
           <li class="display-info"><strong>Places : </strong>{{currentSelectedShip.nbPlaces}}</li>
@@ -28,7 +27,7 @@
       </div>
 
     </div>
-    <button class="d-none d-lg-inline-block" (click)="goTop()" [routerLink]="['/summary', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, currentSelectedShip.name]"
+    <button class="d-none d-lg-inline-block" (click)="goTop()" [routerLink]="['/summary', currentSelectedShip.price, userSettings.distance, userSettings.SelectedPlanet, currentSelectedShip.name]"
       routerLinkActive="router-link-active" *ngIf="currentSelectedShip.price != 0">Choose this ship</button>
   </div>
 

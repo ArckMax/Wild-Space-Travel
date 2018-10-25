@@ -3,7 +3,7 @@
     <img src="{{current.img}}">
     <p>{{current.name}}</p>
     <p>Price per passenger : {{current.price}}</p>
-    <button class="d-sm-inline-block d-md-inline-block d-lg-none phone-choose-button" (click)="goTop()" [routerLink]="['/summary',userSettings.budget,userSettings.distance,userSettings.SelectedPlanet, current.name]"
+    <button class="d-sm-inline-block d-md-inline-block d-lg-none phone-choose-button" (click)="goTop()" [routerLink]="['/summary',current.price,userSettings.distance,userSettings.SelectedPlanet, current.name]"
       routerLinkActive="router-link-active">Chose this ship</button>
   </div>
 </div>

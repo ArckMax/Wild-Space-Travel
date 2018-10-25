@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PlanetInfo } from '../planet-info';
 
+declare var TweenMax:any;
+
 @Component({
   selector: 'app-planetchoice',
   templateUrl: './planetchoice.component.html',
@@ -38,14 +40,19 @@ export class PlanetchoiceComponent implements OnInit {
     console.log(this.userSettings.distance);
   }
 
-  goTop(){
-    let scrollToTop = window.setInterval(() => {
-      let pos = window.pageYOffset;
-      if (pos > 150) {
-        window.scrollTo(0, pos - 50); // how far to scroll on each step
-      } else {
-        window.clearInterval(scrollToTop);
+  goTop() {
+    let pos = parseInt(window.pageYOffset.toString());
+    let proxy: any = { y: pos };
+    TweenMax.to(
+      proxy,
+      1,
+      {
+        y: 0,
+        onUpdate: function () {
+          window.scrollTo(0, proxy.y);
+        }
       }
-    },16)
+    );
+
   }
 }

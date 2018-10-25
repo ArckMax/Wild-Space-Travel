@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { InfoTrip } from '../info-trip';
 
+declare var TweenMax: any;
+
 export interface Price {
   value: string;
   viewValue: string;
@@ -54,16 +56,23 @@ export class ResearchFormComponent {
 
 
   getInfo(infoTrip): void {
-    let scrollToTop = window.setInterval(() => {
-      let pos = window.pageYOffset;
-      if (pos > 150) {
-        window.scrollTo(0, pos - 50); // how far to scroll on each step
-      } else {
-        window.clearInterval(scrollToTop);
+
+    let pos = parseInt(window.pageYOffset.toString());
+    let proxy: any = { y: pos };
+    TweenMax.to(
+      proxy,
+      1,
+      {
+        y: 0,
+        onUpdate: function () {
+          window.scrollTo(0, proxy.y);
+        }
       }
-    },16)
+    );
+
+
     this.obj = new InfoTrip(this.budget, this.distance, this.date);
-    console.log("User settings are : " + this.obj.budget);
+    console.log("User settings are : " + this.obj.budget + " et " + this.obj.date);
   };
 }
 
