@@ -9,7 +9,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes} from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
+import { ModalModule } from  'ngx-bootstrap/modal';
 
+ 
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -100,7 +102,8 @@ const appRoutes: Routes = [
         enableTracing:true,
         useHash:true
       }
-    )
+    ),
+    ModalModule.forRoot()
   ],
   providers: [MatDatepickerModule,ShipsService,PlanetService,HttpClientModule],
   bootstrap: [AppComponent]

@@ -1,18 +1,29 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Hotel } from './hotel';
+
 
 @Pipe({
   name: 'hotelPriceRange'
 })
+
 export class HotelPriceRangePipe implements PipeTransform {
 
-  transform(value: Hotel["price"], price: number): any {
-    let results:Hotel[]=[];
-    let currentHotel:Hotel;  
+  
 
+  transform(value: any[], param_type_tri:string) :any[] {
 
-    return Hotel["price"].sort;
-    console.log(Hotel[price]);
+    if (param_type_tri == undefined){
+
+      return value;
+    
+  } else if ( param_type_tri == "price"){ 
+
+      return  value.sort();
+      
+
+    }
+    return value.sort();
+    
+    
   }
 
 }

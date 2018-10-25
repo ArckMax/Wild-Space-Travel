@@ -6,7 +6,8 @@ export class Hotel {
     name : string;
     price : number;
     priceRange : string;
-    rating : number;
+    rating : string;
     img : string;
+
 
 }
