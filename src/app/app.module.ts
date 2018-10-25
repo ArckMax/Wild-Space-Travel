@@ -28,11 +28,13 @@ import { TrendPlaneteComponent } from './trend-planete/trend-planete.component';
 import { TrendComponent } from './trend/trend.component';
 
 
+
 import { ShipsService } from './ships.service';
 import { PlanetService } from "./planet.service";
 import { PriceRangePipe } from './price-range.pipe';
 import { HotelPriceRangePipe } from './hotel-price-range.pipe';
 import { ShipSortbyPricePipe } from './ship-sortby-price.pipe';
+import { GoodTravelComponent } from './good-travel/good-travel.component';
 
 
 
@@ -51,7 +53,8 @@ const appRoutes: Routes = [
   {path:"summaryWithHotel/:budget/:distance/:SelectedPlanet/:SelectedShip/:hotel", component:SummaryComponent},
   {path:"trend1/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
   {path:"trend2/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
-  {path:"trend3/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent}
+  {path:"trend3/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
+  {path:"goodtravel",component:GoodTravelComponent}
 
 ]
 
@@ -77,6 +80,7 @@ const appRoutes: Routes = [
     PriceRangePipe,
     HotelPriceRangePipe,
     ShipSortbyPricePipe,
+    GoodTravelComponent,
     
   ],
   imports: [
