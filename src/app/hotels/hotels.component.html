@@ -1,34 +1,30 @@
-
-
 <div id="hotelslistpage">
   <div class="hotels-list">
 
-    <button> sort by price range</button> 
+    <button> sort by price range</button>
     <button> sort by rating</button>
 
 
 
 
 
-      <ul class="hotels">
-          <li *ngFor="let hotel of hotels" 
-            [class.selected]="hotel === selectedHotel"
-            (click)="onSelect(hotel)">
-            {{hotel.name}}<span class="badge"> {{hotel.price}}units/night/person</span> 
-          </li>
-        </ul>
+    <ul class="hotels">
+      <li *ngFor="let hotel of hotels" [class.selected]="hotel === selectedHotel" (click)="onSelect(hotel)">
+        {{hotel.name}}<span class="badge"> {{hotel.price}}units/night/person</span>
+      </li>
+    </ul>
 
-      <div *ngIf="selectedHotel.name!='no_hotel_defined'"> 
-          <h2> More Details about {{selectedHotel.name | uppercase}}</h2>
-          <div class="selected-img-hotel">
-            <img src = "{{selectedHotel.img}}" >
-          </div>
-          <div>
-
-<!--       <label>Search 
+    <div *ngIf="selectedHotel.name!='no_hotel_defined'">
+      <h2> More Details about {{selectedHotel.name | uppercase}}</h2>
+      <div class="selected-img-hotel">
+        <img src="{{selectedHotel.img}}">
+      </div>
+      <div>
+        <!--       <label>Search 
               <input [(ngModel)]="selectedHotel.name" placeholder="name">
             </label> -->
-          </div>    
       </div>
+      <button [routerLink]="['/backToSummary', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, userSettings.SelectedShip, selectedHotel.name]" routerLinkActive="router-link-active" >Choose this hotel</button>
+    </div>
   </div>
 </div>

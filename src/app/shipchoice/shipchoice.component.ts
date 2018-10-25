@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Ship } from '../ship';
 
+declare var TweenMax:any;
+
 @Component({
   selector: 'app-shipchoice',
   templateUrl: './shipchoice.component.html',
@@ -49,14 +51,18 @@ export class ShipchoiceComponent implements OnInit {
   }
 
   goTop() {
-    let scrollToTop = window.setInterval(() => {
-      let pos = window.pageYOffset;
-      if (pos > 150) {
-        window.scrollTo(0, pos - 50); // how far to scroll on each step
-      } else {
-        window.clearInterval(scrollToTop);
+    let pos = parseInt(window.pageYOffset.toString());
+    let proxy: any = { y: pos };
+    TweenMax.to(
+      proxy,
+      1,
+      {
+        y: 0,
+        onUpdate: function () {
+          window.scrollTo(0, proxy.y);
+        }
       }
-    }, 16)
+    );
   }
 
 }

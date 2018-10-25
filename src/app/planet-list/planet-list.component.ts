@@ -5,6 +5,8 @@ import { Observable } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 import { Output, EventEmitter  } from '@angular/core';
 
+declare var TweenMax:any;
+
 
 @Component({
   selector: 'app-planet-list',
@@ -14,6 +16,11 @@ import { Output, EventEmitter  } from '@angular/core';
 export class PlanetListComponent implements OnInit {
 
   // Selection of planet initialization 
+
+  public currentSelectedPlanet:PlanetInfo = {
+    "pl_name":"no-selected-planet",
+    "st_dist":0
+  }
  
   @Output() SelectedPlanetChange:EventEmitter<PlanetInfo> = new EventEmitter();
 
@@ -49,8 +56,6 @@ export class PlanetListComponent implements OnInit {
   ngOnInit() {
     
     const obs:Observable<PlanetInfo[]> = this.service.getPlanets();
-    // const obs:Observable<PlanetInfo[]> = this.service.getPlanets(Number(this.userSettings.distance.split("-")[0]), Number(this.userSettings.distance.split("-")[1]));
-
 
     obs.subscribe(
       (param_planets_list:PlanetInfo[]) => {
@@ -67,14 +72,20 @@ export class PlanetListComponent implements OnInit {
   }
 
   goTop(){
-    let scrollToTop = window.setInterval(() => {
-      let pos = window.pageYOffset;
-      if (pos > 150) {
-        window.scrollTo(0, pos - 50); // how far to scroll on each step
-      } else {
-        window.clearInterval(scrollToTop);
+    
+    let pos = parseInt(window.pageYOffset.toString());
+    let proxy:any = { y: pos};
+    TweenMax.to(
+      proxy, 
+      1, 
+      {
+        y: 0,
+        onUpdate: function(){
+          window.scrollTo(0, proxy.y);
+        } 
       }
-    },16)
+    );
+    
   }
 
 }

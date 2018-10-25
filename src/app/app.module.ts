@@ -50,7 +50,7 @@ const appRoutes: Routes = [
   {path:"shipchoice/:budget/:distance/:SelectedPlanet", component:ShipchoiceComponent},
   {path:"summary/:budget/:distance/:SelectedPlanet/:SelectedShip", component:SummaryComponent},
   {path:"hotelpage/:budget/:distance/:SelectedPlanet/:SelectedShip", component:HotelSelectionComponent},
-  {path:"summaryWithHotel/:budget/:distance/:SelectedPlanet/:SelectedShip/:hotel", component:SummaryComponent},
+  {path:"backToSummary/:budget/:distance/:SelectedPlanet/:SelectedShip/:SelectedHotel", component:SummaryComponent},
   {path:"trend1/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
   {path:"trend2/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
   {path:"trend3/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
