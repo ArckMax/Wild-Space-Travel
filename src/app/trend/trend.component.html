@@ -9,7 +9,7 @@
                   <div *ngIf="viewImage1">
                     <app-trend-planete [externalTitle]="title1"></app-trend-planete>
                     <div>
-                      <a [routerLink] ="['/trend1/5000/400-600/Kepler-153c/Bee']"><button type="button" class="btn btn-outline-light" id="trend">Select</button></a> 
+                      <a (click)="goTop()" [routerLink] ="['/trend1/5000/400-600/Kepler-153c/Bee']"><button type="button" class="btn btn-outline-light" id="trend">Select</button></a> 
                     </div> 
                   </div>            
           </div>
@@ -27,7 +27,7 @@
               <div *ngIf="viewImage2">
                 <app-trend-planete [externalTitle]="title2"></app-trend-planete>
                 <div>
-                  <a  [routerLink] ="['/trend2/5000/600-800/Kepler-161b/Nostromo']"><button type="button"  class="btn btn-outline-light" id="trend">Select</button></a> 
+                  <a (click)="goTop()" [routerLink] ="['/trend2/5000/600-800/Kepler-161b/Nostromo']"><button type="button"  class="btn btn-outline-light" id="trend">Select</button></a> 
                 </div>
               </div>
               
@@ -44,7 +44,7 @@
               <div *ngIf="viewImage3">
                    <app-trend-planete [externalTitle]="title3"></app-trend-planete>
                    <div>
-                    <a [routerLink] ="['/trend3/1000000/1200-1400/KIC7917485b/PrawnMothership']"><button type="button"  class="btn btn-outline-light" id="trend">Select</button></a>  
+                    <a (click)="goTop()" [routerLink] ="['/trend3/1000000/1200-1400/KIC7917485b/PrawnMothership']"><button type="button"  class="btn btn-outline-light" id="trend">Select</button></a>  
                  </div>
               </div>
                

@@ -45,7 +45,7 @@ a:hover{
     font-family: "newSpace";
     color: #FFF;
     text-shadow:0 5px 15px white;
-    font-size:5vw;  
+    font-size:4vw;  
     margin-top:0;
     padding-bottom:0;
     
@@ -90,4 +90,6 @@ a:hover{
     transition: 0.3s;
     
 }
+
+.maintitle-subtitle{}
 

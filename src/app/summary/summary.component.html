@@ -1,5 +1,5 @@
 <div class="wrap text-center container-fluid justify-content-center">
-
+  
   <h1 class="pagetitle">Checkout</h1>
 
   <div>
@@ -25,16 +25,14 @@
     <div class="summary-ship-choice-box col-12 col-lg-4 d-inline-block align-top">
       <h1 class="pagetitle d-none d-lg-inline-block">Ship</h1>
       <img src="/src/assets/img/millenium-falcon-1627322_1920.jpg" alt="Current ship" id="current-ship">
-
     </div>
   </div>
 
+    <div class="hotel-selection-box">Hotel :{{userSettings.SelectedHotel}}</div>
 
-  <div>
-    <button *ngIf="userSettings.selectedHotel == undefined" [routerLink]="['/hotelpage', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, userSettings.SelectedShip]"
-      routerLinkActive="router-link-active" id="go-hotel-button"> GO TO HOTEL PAGE </button>
-    <div *ngIf="userSettings.selectedHotel != '' " class="hotel-selection-box">{{userSettings.SelectedHotel}}</div>
-  </div>
+
+  <button [routerLink]="['/hotelpage', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, userSettings.SelectedShip]"
+    routerLinkActive="router-link-active" id="go-hotel-button"> GO TO HOTEL PAGE </button>
   <div>
     <button class="skew-button"><span>Proceed to payment</span></button>
   </div>

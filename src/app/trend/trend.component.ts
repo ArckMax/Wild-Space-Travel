@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var TweenMax:any;
+
 @Component({
   selector: 'app-trend',
   templateUrl: './trend.component.html',
@@ -27,6 +29,23 @@ export class TrendComponent implements OnInit {
     this.viewImage3 = !this.viewImage3;
   };
   ngOnInit() {
+  }
+
+  goTop(){
+    
+    let pos = parseInt(window.pageYOffset.toString());
+    let proxy:any = { y: pos};
+    TweenMax.to(
+      proxy, 
+      1, 
+      {
+        y: 0,
+        onUpdate: function(){
+          window.scrollTo(0, proxy.y);
+        } 
+      }
+    );
+    
   }
  
 
