@@ -56,8 +56,6 @@ export class PlanetListComponent implements OnInit {
   ngOnInit() {
     
     const obs:Observable<PlanetInfo[]> = this.service.getPlanets();
-    // const obs:Observable<PlanetInfo[]> = this.service.getPlanets(Number(this.userSettings.distance.split("-")[0]), Number(this.userSettings.distance.split("-")[1]));
-
 
     obs.subscribe(
       (param_planets_list:PlanetInfo[]) => {
