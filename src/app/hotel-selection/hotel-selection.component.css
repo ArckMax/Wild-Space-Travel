@@ -21,8 +21,10 @@
 }
  .card {
 
-     background-color:black !important;
-     color:#fff;
+     background-color:rgba(2, 0, 14, 0.51) !important;
+     color:rgba(237, 231, 231);
+     text-shadow:0 5px 15px #fff;
+     
  }
 
 .card-body .hotel-description{
@@ -30,12 +32,15 @@
     font-family: 'Kodchasan', sans-serif;
     
 }
+
+
 .more-details-button{
 
     border-radius:5%;
-    padding:0;
+    padding:0.1em;
     margin-top:0;
     font-size:0.8em;
+   
     
 }
 
@@ -132,4 +137,10 @@ h5{
     font-size:5vw;
 
 
+}
+
+
+.wspselection{
+
+    margin-top:1em;
 }

@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ShipsService} from  "../ships.service";
-import {Ship} from "../ship";
+import { ShipsService } from "../ships.service";
+import { Ship } from "../ship";
 import { ActivatedRoute } from '@angular/router';
-import { Output, EventEmitter  } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
+
+declare var TweenMax:any;
 
 @Component({
   selector: 'app-ship-list',
@@ -12,46 +14,60 @@ import { Output, EventEmitter  } from '@angular/core';
 
 export class ShipListComponent implements OnInit {
 
-    // Selection of planet initialization 
- 
-    @Output() SelectedShipChange:EventEmitter<Ship> = new EventEmitter();
+  // Selection of planet initialization 
 
-    public selection( current:Ship ){
-      this.SelectedShipChange.emit(current);
-    }
+  @Output() SelectedShipChange: EventEmitter<Ship> = new EventEmitter();
+
+  public selection(current: Ship) {
+    this.SelectedShipChange.emit(current);
+  }
 
   // Initialization for ShipsService
-  public ships:any[];
-  private service:ShipsService;
+  public ships: any[];
+  private service: ShipsService;
 
   // Initialization for URL reading 
   private sub;
-  public userSettings:any={
+  public userSettings: any = {
     "budget": 0,
-    "distance":"",
-    "SelectedPlanet":""
+    "distance": "",
+    "SelectedPlanet": ""
   }
 
   // ShipService & ActivatedRoute Injections
 
-  constructor(param_my_service:ShipsService, private _Activatedroute:ActivatedRoute) { 
+  constructor(param_my_service: ShipsService, private _Activatedroute: ActivatedRoute) {
     this.service = param_my_service;
     this.ships = [];
   }
 
   ngOnInit() {
     this.service.getShips().subscribe(
-      (ships:Ship[]) => {
+      (ships: Ship[]) => {
         this.ships = ships;
       }
     );
 
-    this.sub=this._Activatedroute.params.subscribe(params => { 
-      this.userSettings.budget = params['budget']; 
+    this.sub = this._Activatedroute.params.subscribe(params => {
+      this.userSettings.budget = params['budget'];
       this.userSettings.distance = params["distance"];
       this.userSettings.SelectedPlanet = params["SelectedPlanet"];
     });
     console.log(this.userSettings.budget);
   }
-  
+
+  goTop() {
+    let pos = parseInt(window.pageYOffset.toString());
+    let proxy: any = { y: pos };
+    TweenMax.to(
+      proxy,
+      1,
+      {
+        y: 0,
+        onUpdate: function () {
+          window.scrollTo(0, proxy.y);
+        }
+      }
+    );
+  }
 }

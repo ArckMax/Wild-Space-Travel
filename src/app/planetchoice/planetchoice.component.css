@@ -19,12 +19,13 @@ button{
     font-family: "newSpace",'Courier New', Courier, monospace;
     font-size:6vw;
     color:#FFF;
-    margin-top:10%;
-    width:90%;
+    margin-top:5%;
+    width:100%;
     margin-bottom:20px;
     border:none;
     background: transparent;
 }
+
 
 /* Left bloc  */
 

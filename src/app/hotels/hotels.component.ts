@@ -1,7 +1,7 @@
-
 import { Component, OnInit } from '@angular/core';
 import { Hotel } from '../hotel';
 import { HOTELS } from '../mock-hotels';
+import { ActivatedRoute } from "@angular/router";
 
 import { TemplateRef } from '@angular/core';
 
@@ -16,39 +16,38 @@ import { TemplateRef } from '@angular/core';
 
 export class HotelsComponent implements OnInit {
 
+  private sub;
+  public userSettings: any = {
+    "budget": 0,
+    "distance": "",
+    "SelectedPlanet": "",
+    "SelectedShip": ""
+  }
 
   hotels = HOTELS;
   selectedHotel:Hotel = {
     name:"no_hotel_defined",
     price:0,
+    img:"",
     priceRange:"",
-    rating:"",
-    img:""
+    rating:""
   };
 
   
-
-  
-
-
-  constructor() { }
+  constructor(private _Activatedroute: ActivatedRoute) { }
 
   ngOnInit() {
+
+    this.sub = this._Activatedroute.params.subscribe(params => {
+      this.userSettings.budget = params['budget'];
+      this.userSettings.distance = params["distance"];
+      this.userSettings.SelectedPlanet = params["SelectedPlanet"];
+      this.userSettings.SelectedShip = params["SelectedShip"]
+    });
   }
 
   onSelect(hotel: Hotel):void{
     this.selectedHotel = hotel;
-    console.log(this.selectedHotel.name);
-
-
-
-
-
-
-  
-
-    
-
   }
 
 

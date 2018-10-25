@@ -26,13 +26,16 @@ import { ShipListComponent } from './ship-list/ship-list.component';
 import { HotelSelectionComponent } from './hotel-selection/hotel-selection.component';
 import { LoadingPageComponent } from './loading-page/loading-page.component';
 import { HotelsComponent } from './hotels/hotels.component';
+import { TrendPlaneteComponent } from './trend-planete/trend-planete.component';
+import { TrendComponent } from './trend/trend.component';
 
 
 import { ShipsService } from './ships.service';
 import { PlanetService } from "./planet.service";
 import { PriceRangePipe } from './price-range.pipe';
 import { HotelPriceRangePipe } from './hotel-price-range.pipe';
-import { ModalHotelListComponent } from './modal-hotel-list/modal-hotel-list.component';
+import { ShipSortbyPricePipe } from './ship-sortby-price.pipe';
+
 
 
 const appRoutes: Routes = [
@@ -46,7 +49,12 @@ const appRoutes: Routes = [
   {path:"planetchoice/:budget/:distance", component:PlanetchoiceComponent},  
   {path:"shipchoice/:budget/:distance/:SelectedPlanet", component:ShipchoiceComponent},
   {path:"summary/:budget/:distance/:SelectedPlanet/:SelectedShip", component:SummaryComponent},
-  {path:"hotelselection/:modal-hotel-list", component:ModalHotelListComponent}
+  {path:"hotelpage/:budget/:distance/:SelectedPlanet/:SelectedShip", component:HotelSelectionComponent},
+  {path:"backToSummary/:budget/:distance/:SelectedPlanet/:SelectedShip/:SelectedHotel", component:SummaryComponent},
+  {path:"trend1/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
+  {path:"trend2/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
+  {path:"trend3/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent}
+
 ]
 
 
@@ -66,9 +74,11 @@ const appRoutes: Routes = [
     HotelSelectionComponent,
     LoadingPageComponent,
     HotelsComponent,
+    TrendPlaneteComponent,
+    TrendComponent,
     PriceRangePipe,
     HotelPriceRangePipe,
-    ModalHotelListComponent,
+    ShipSortbyPricePipe,
     
   ],
   imports: [

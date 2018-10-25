@@ -1,0 +1,56 @@
+<div class="container-fluid" class="container1">
+    <h1 class="titlecomponent">Trendy Destination</h1>
+  <div class="row">
+    
+          <div class="container" class="col-sm-12 col-md-12 col-lg-4">
+                  <div class="img1">
+                      <img src="src/assets/img/fantasy-2368432_1920.jpg" (click)="viewInfoImage1()" class="image" />
+                  </div>
+                  <div *ngIf="viewImage1">
+                    <app-trend-planete [externalTitle]="title1"></app-trend-planete>
+                    <div>
+                      <a [routerLink] ="['/trend1/5000/400-600/Kepler-153c/Bee']"><button type="button" class="btn btn-outline-light" id="trend">Select</button></a> 
+                    </div> 
+                  </div>            
+          </div>
+         
+              
+           
+
+     
+
+          <div class="container" class="col-sm-12 col-md-12 col-lg-4">
+              <div class="img2">
+                  <img src="src/assets/img/solaris-3365405_1920.jpg" (click)="viewInfoImage2()" class="image" />
+
+              </div>
+              <div *ngIf="viewImage2">
+                <app-trend-planete [externalTitle]="title2"></app-trend-planete>
+                <div>
+                  <a  [routerLink] ="['/trend2/5000/600-800/Kepler-161b/Nostromo']"><button type="button"  class="btn btn-outline-light" id="trend">Select</button></a> 
+                </div>
+              </div>
+              
+
+          </div>
+          <div class="container" class="col-sm-12 col-md-12 col-lg-4">
+
+
+              <div class="img3">
+
+                  <img src="src/assets/img/juskteez-vu-3824-1920.jpg" (click)="viewInfoImage3()" class="image" />
+              </div>
+
+              <div *ngIf="viewImage3">
+                   <app-trend-planete [externalTitle]="title3"></app-trend-planete>
+                   <div>
+                    <a [routerLink] ="['/trend3/1000000/1200-1400/KIC7917485b/PrawnMothership']"><button type="button"  class="btn btn-outline-light" id="trend">Select</button></a>  
+                 </div>
+              </div>
+               
+
+          </div>
+
+      </div>
+
+</div>

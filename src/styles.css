@@ -11,11 +11,11 @@ html, body { height: 100%; }
 body { margin: 0; font-family: 'Roboto', sans-serif; }
 
 .pagetitle{
-    color:#fff;
-    font-size:8vw;
-    text-align: center;
-    padding:2vw;
-    font-family:"Kodchasan", Arial, Helvetica, sans-serif;
+    font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script',  *//* ' Aguafina Script',  */ /* 'Oleo Script' *//* ,cursive; */ 
+    color:#FFF;
+    text-shadow:0 5px 15px black;
+    font-size: 2em;
+    padding-top: 5%;
 }
 .box-container{
     border: 1px solid rgba(500, 500, 500, 0.4);
