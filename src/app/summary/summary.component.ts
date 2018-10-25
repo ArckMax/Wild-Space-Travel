@@ -32,7 +32,7 @@ ngOnInit() {
     this.userSettings.SelectedShip = params["SelectedShip"];
     this.userSettings.SelectedHotel = params["SelectedHotel"];
   });
-  console.log(this.userSettings.budget);
+  
 }
 
 }

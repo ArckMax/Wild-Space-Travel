@@ -43,7 +43,5 @@ export class HotelsComponent implements OnInit {
 
   onSelect(hotel : Hotel):void{
     this.selectedHotel = hotel;
-    console.log(this.selectedHotel.name);
-
   }
 }
