@@ -3,11 +3,16 @@ import { Component, OnInit } from '@angular/core';
 import { Hotel } from '../hotel';
 import { HOTELS } from '../mock-hotels';
 
+import { TemplateRef } from '@angular/core';
+
+
+
+
 @Component({
   selector: 'app-hotels',
   templateUrl: './hotels.component.html',
   styleUrls: ['./hotels.component.css']
-})
+},)
 
 export class HotelsComponent implements OnInit {
 
@@ -16,20 +21,35 @@ export class HotelsComponent implements OnInit {
   selectedHotel:Hotel = {
     name:"no_hotel_defined",
     price:0,
+    priceRange:"",
+    rating:"",
     img:""
   };
 
   
+
   
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  onSelect(hotel : Hotel):void{
+  onSelect(hotel: Hotel):void{
     this.selectedHotel = hotel;
     console.log(this.selectedHotel.name);
 
+
+
+
+
+
+  
+
+    
+
   }
+
+
 }

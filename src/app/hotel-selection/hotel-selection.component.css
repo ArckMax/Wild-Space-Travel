@@ -7,9 +7,6 @@
     padding-top: 10%;
 }
 
-
-
-
 .card-header{
     margin:0 !important;
     padding:0 !important;
@@ -36,8 +33,12 @@
 .more-details-button{
 
     border-radius:5%;
-    margin-top:10%;
+    padding:0;
+    margin-top:0;
+    font-size:0.8em;
+    
 }
+
 
 
 #hotelselectionpage{
@@ -61,8 +62,6 @@
 }
 
 
-
-
 .hotel-img-container{
     position:relative;
     text-align: center;
@@ -70,10 +69,8 @@
     max-height: 300px;
     overflow: hidden;
     padding:0;
-    
-    
+       
 }
-
 
 
 h5{
@@ -94,15 +91,12 @@ h5{
     padding-top: 5%;
     padding-bottom:5%;
     text-align: center;
-    
 
 }
 
-
-
 .hotel-pic-caption{
     position:absolute; 
-    padding-top:10%;   
+    padding-top:20%;   
     color:#FFF;
     text-shadow:0 5px 15px white;
     font-size:2em;

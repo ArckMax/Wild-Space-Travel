@@ -9,7 +9,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes} from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
+import { ModalModule } from  'ngx-bootstrap/modal';
 
+ 
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -30,6 +32,7 @@ import { ShipsService } from './ships.service';
 import { PlanetService } from "./planet.service";
 import { PriceRangePipe } from './price-range.pipe';
 import { HotelPriceRangePipe } from './hotel-price-range.pipe';
+import { ModalHotelListComponent } from './modal-hotel-list/modal-hotel-list.component';
 
 
 const appRoutes: Routes = [
@@ -42,7 +45,8 @@ const appRoutes: Routes = [
   {path:"hotelselection", component:HotelSelectionComponent},
   {path:"planetchoice/:budget/:distance", component:PlanetchoiceComponent},  
   {path:"shipchoice/:budget/:distance/:SelectedPlanet", component:ShipchoiceComponent},
-  {path:"summary/:budget/:distance/:SelectedPlanet/:SelectedShip", component:SummaryComponent}
+  {path:"summary/:budget/:distance/:SelectedPlanet/:SelectedShip", component:SummaryComponent},
+  {path:"hotelselection/:modal-hotel-list", component:ModalHotelListComponent}
 ]
 
 
@@ -64,6 +68,7 @@ const appRoutes: Routes = [
     HotelsComponent,
     PriceRangePipe,
     HotelPriceRangePipe,
+    ModalHotelListComponent,
     
   ],
   imports: [
@@ -83,7 +88,8 @@ const appRoutes: Routes = [
         enableTracing:true,
         useHash:true
       }
-    )
+    ),
+    ModalModule.forRoot()
   ],
   providers: [MatDatepickerModule,ShipsService,PlanetService,HttpClientModule],
   bootstrap: [AppComponent]
