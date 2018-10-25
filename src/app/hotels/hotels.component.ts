@@ -3,11 +3,16 @@ import { Hotel } from '../hotel';
 import { HOTELS } from '../mock-hotels';
 import { ActivatedRoute } from "@angular/router";
 
+import { TemplateRef } from '@angular/core';
+
+
+
+
 @Component({
   selector: 'app-hotels',
   templateUrl: './hotels.component.html',
   styleUrls: ['./hotels.component.css']
-})
+},)
 
 export class HotelsComponent implements OnInit {
 
@@ -25,7 +30,7 @@ export class HotelsComponent implements OnInit {
     price:0,
     img:"",
     priceRange:"",
-    rating:0
+    rating:""
   };
 
   
@@ -41,7 +46,9 @@ export class HotelsComponent implements OnInit {
     });
   }
 
-  onSelect(hotel : Hotel):void{
+  onSelect(hotel: Hotel):void{
     this.selectedHotel = hotel;
   }
+
+
 }

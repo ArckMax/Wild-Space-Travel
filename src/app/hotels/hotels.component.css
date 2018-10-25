@@ -1,19 +1,10 @@
 #hotelslistpage{
    
-   width:100%;
+   width:80%;
+   margin-left:6.5%;
 
 }
 
-
-@media only screen and (min-width:900px){
-
-  .ul li{
-
-      width:50%;
-
-  }
-
-}
 
 .hotelpage-titles2{
     color:#fff;
@@ -25,60 +16,130 @@
 }
 
 
-.hotels{
-  margin-left:-9%;
-}
 
 .hotels-list{
-    padding-top:5vw;
+
     padding-bottom:5vw;
    
 }
+
+
+.bold-hotel-title{
+
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
 
 
 .hotels li {
     font-family:'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script', */ /* 'Aguafina Script', */ /* 'Oleo Script',cursive; */ 
     cursor: pointer;
     position: relative;   
-    font-size:1em;   
+    font-size:1.2em;   
     background-color: #fff;
     list-style-type: none;
     opacity:0.8;
     margin: .5em;
     padding: .3em 0 .3em;
-    height: 2em;
     border-radius: 4px;
    
   }
 
-  .hotels li.selected:hover {
-    background-color: #BBD8DC !important;
-    color: white;
+
+
+  .hotels li.selected:hover { 
+    color: rgb(1, 73, 114);
     
   }
+
 
   .hotels li:hover {
     color:#F50057;
     background-color:#fff;
-    
     left: .1em;
     
   }
 
-  .hotels .badge {
-    display: inline-block;
-    font-size: small;
 
-    text-shadow:0 5px 15px white;
-    padding: 0.8em 0.7em 0 0.7em;
 
-    line-height: 1em;
-    position: relative;
-    right: -1px;
-    top: -4px;
-    height: 2em;
+  .list-inner div{
+
+    font-size:0.9em; 
+    margin-left:5%;
+  }
+
+
+
+  .list-inner button{
     float:right;
-    border-radius: 4px 0 0 4px;
-  }  
+    margin-bottom: 2em;
+    margin-right: 2em;
+    margin-top:2em;
+    border-radius: 5%;
+  }
 
- 
+
+
+  .list-inner button:hover{
+    color: #F50057;
+    text-shadow:0 10px 15px #fff;
+    right: .5em;
+    
+  }
+
+
+  .list-inner img{
+
+    width:90%;
+    margin-left:5%;
+    margin-bottom:2em;
+    margin-top:1em;
+    
+  }
+
+
+  .list-inner:hover{
+    left:0;
+   
+  }
+
+
+ .amenities{
+
+  font-weight:bold;
+  text-decoration: underline;
+
+ }
+
+
+ .hotels .list-inner .selected:hover {
+  background-color: red !important;
+  color:black;
+  
+}
+
+
+/*  .sort-price-button , .sort-rating-button{
+  cursor: pointer;
+   background-color:#FFF;
+   opacity:0.7;
+   color:black;
+   padding:0.3em;
+   border-radius:10%;
+   margin-right:1em;
+   font-family: 'Kodchasan', sans-serif;
+
+ } */
+
+
+
+
+
+
+
+
+
+
+
+

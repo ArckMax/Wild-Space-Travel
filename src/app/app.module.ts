@@ -9,7 +9,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes} from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
+import { ModalModule } from  'ngx-bootstrap/modal';
 
+ 
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -28,11 +30,13 @@ import { TrendPlaneteComponent } from './trend-planete/trend-planete.component';
 import { TrendComponent } from './trend/trend.component';
 
 
+
 import { ShipsService } from './ships.service';
 import { PlanetService } from "./planet.service";
 import { PriceRangePipe } from './price-range.pipe';
 import { HotelPriceRangePipe } from './hotel-price-range.pipe';
 import { ShipSortbyPricePipe } from './ship-sortby-price.pipe';
+import { GoodTravelComponent } from './good-travel/good-travel.component';
 
 
 
@@ -51,7 +55,8 @@ const appRoutes: Routes = [
   {path:"backToSummary/:budget/:distance/:SelectedPlanet/:SelectedShip/:SelectedHotel", component:SummaryComponent},
   {path:"trend1/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
   {path:"trend2/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
-  {path:"trend3/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent}
+  {path:"trend3/:budget/:distance/:SelectedPlanet/:SelectedShip",component:SummaryComponent},
+  {path:"goodtravel",component:GoodTravelComponent}
 
 ]
 
@@ -77,6 +82,7 @@ const appRoutes: Routes = [
     PriceRangePipe,
     HotelPriceRangePipe,
     ShipSortbyPricePipe,
+    GoodTravelComponent,
     
   ],
   imports: [
@@ -96,7 +102,8 @@ const appRoutes: Routes = [
         enableTracing:true,
         useHash:true
       }
-    )
+    ),
+    ModalModule.forRoot()
   ],
   providers: [MatDatepickerModule,ShipsService,PlanetService,HttpClientModule],
   bootstrap: [AppComponent]
