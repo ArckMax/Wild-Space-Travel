@@ -1,6 +1,6 @@
 <div class="container-fluid text-center">
   <h1 class="pagetitle">Ship selection</h1>
-  <h4 *ngIf="userSettings.budget != undefined" class="text-center">Your Maximum budget : {{userSettings.budget}}</h4>
+  <h4 *ngIf="userSettings.budget != 'undefined'" class="text-center">Your Maximum budget : {{userSettings.budget}}</h4>
 
   <div class="bloc-list-ships col-12 d-inline-block text-center list-column container-fluid">
     <app-ship-list (SelectedShipChange)="SelectedShipChangeHandler($event)"></app-ship-list>

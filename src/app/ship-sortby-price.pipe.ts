@@ -7,7 +7,7 @@ import { Ship } from './ship';
 export class ShipSortbyPricePipe implements PipeTransform {
 
   transform(value: Ship[], budgetMax: number): Ship[] {
-    if (budgetMax == undefined || budgetMax == 0)
+    if (budgetMax == 0 || budgetMax == undefined )
       return value;
     else {
       let newArr = [];

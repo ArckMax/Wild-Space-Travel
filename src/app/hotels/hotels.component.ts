@@ -5,7 +5,7 @@ import { ActivatedRoute } from "@angular/router";
 
 import { TemplateRef } from '@angular/core';
 
-
+declare var TweenMax:any;
 
 
 @Component({
@@ -50,5 +50,22 @@ export class HotelsComponent implements OnInit {
     this.selectedHotel = hotel;
   }
 
+
+goTop(){
+    
+    let pos = parseInt(window.pageYOffset.toString());
+    let proxy:any = { y: pos};
+    TweenMax.to(
+      proxy, 
+      1, 
+      {
+        y: 0,
+        onUpdate: function(){
+          window.scrollTo(0, proxy.y);
+        } 
+      }
+    );
+    
+  }
 
 }

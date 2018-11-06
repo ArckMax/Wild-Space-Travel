@@ -39,7 +39,7 @@
                         <div>Tours/ticket assistance </div>
                         <div>ATM/banking </div>   
                         
-                        <button [routerLink]="['/backToSummary', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, userSettings.SelectedShip, selectedHotel.name]" routerLinkActive="router-link-active" >BOOK this hotel</button>
+                        <button [routerLink]="['/backToSummary', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, userSettings.SelectedShip, selectedHotel.name]" routerLinkActive="router-link-active" (click)="goTop()" >BOOK this hotel</button>
             
                           
                 </div>
