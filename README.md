@@ -1,4 +1,40 @@
-# WildSpaceTravel
+# WildSpaceTravel - version 1.0, oct.2018  - created by Maxime Gypteau, Loïc Jacome de Souza, H.Agnes Genay -
+-------------------------------------------------------------------------------------------------------------
+
+
+We have created this app with Angular CLI version 6.1.5, and using NASA API, in the context of our developer training 
+ at  WILD CODE SCHOOL La Loupe (FR)
+
+We have decided to build a fiction-related application, that could actually one day become a real product ! For now we 
+are willing to continue and enhance the app, but here's the very first version.
+ 
+We hope you will enjoy the trip, don't hesitate to contact us for further informations,    
+
+
+       Maxime Gypteau                     Loïc Jacome de Souza                        H. Agnes Genay
+       --------------                     --------------------                        --------------
+   maxime.gypteau@gmail.com                moukil01@gmail.com                     h.agnes.genay@gmail.com
+
+
+
+
+*                ||
+                 ||
+                |  |       *
+               |    |
+      *        |----|                      *     
+               |    |              
+               |----|                  
+              |      |       
+         *---||||||||||---*                           
+              *   *  *  
+              * * * **
+              ** * * *  
+             * ** * ***
+             BON VOYAGE !
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
