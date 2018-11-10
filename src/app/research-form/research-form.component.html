@@ -17,7 +17,7 @@
   <mat-form-field class="example-full-width research-form-inputs text-center">
     <input matInput [matDatepicker]="picker" placeholder="DATE" [(ngModel)]="date">
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker touchUi #picker [(ngModel)]="roomsFilter.date"  ngDefaultControl (selectedChanged)="onChange($event)"></mat-datepicker>
+    <mat-datepicker touchUi #picker [(ngModel)]="roomsFilter.date"  ngDefaultControl (selectedChanged) ="onChange($event)"> </mat-datepicker>
   </mat-form-field>
     
 

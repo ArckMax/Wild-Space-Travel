@@ -26,7 +26,7 @@ export class ResearchFormComponent {
   //Variable & Function to access to date
 
   roomsFilter: any = {};
-  public onChange(event: any, newDate: any): void {
+  public onChange(event: any, /* newDate: any */): void {
     console.log(event);
     // this.getData(newDate);
   };
