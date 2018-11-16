@@ -1,9 +1,6 @@
 
-
-
 .wild-space-travel{
-
-    background-image:url("../../assets/img/laura-vinck-427554-1280.jpg");
+    background-image:url("/assets/img/laura-vinck-427554-1920.jpg");
     background-position:center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,14 +12,9 @@
     font-size:8vw;
   }
 
-
-
 .container-loading{
-  
   padding-top:10%;
 }
-
-
 
 .loading-text{
     font-size:12vw;
@@ -30,7 +22,6 @@
     text-shadow:0 5px 15px white;
     
 }
-
 
 
 /* ---loading animation----*/
@@ -49,9 +40,11 @@
     border-radius: 50%;
     animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
   }
+
   .lds-ripple div:nth-child(2) {
     animation-delay: -0.5s;
   }
+  
   @keyframes lds-ripple {
     0% {
       top: 28px;

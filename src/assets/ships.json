@@ -5,7 +5,7 @@
     "nbWing" : 2,
     "price" : 1500,
     "nbPlaces" : 12,
-    "img" : "src/assets/img/millenium-falcon-1627322_1920.jpg"
+    "img" : "assets/img/millenium-falcon-1627322_1920.jpg"
   },
   {
     "name": "Eagle-5",
@@ -13,7 +13,7 @@
     "nbWing" : 2,
     "price" : 499,
     "nbPlaces" : 50,
-    "img" : "src/assets/img/eagle5.jpg"
+    "img" : "assets/img/eagle5.jpg"
   },
   {
     "name": "Discovery One",
@@ -21,7 +21,7 @@
     "nbWing" : 2,
     "price" : 499,
     "nbPlaces" : 1500000,
-    "img" : "src/assets/img/discovery1.jpg"
+    "img" : "assets/img/discovery1.jpg"
   },
   {
     "name": "Prawn Mothership",
@@ -29,7 +29,7 @@
     "nbWing" : 0,
     "price" : 499,
     "nbPlaces" : 75000,
-    "img" : "src/assets/img/motherprawn.jpg"
+    "img" : "assets/img/motherprawn.jpg"
   },
   {
     "name": "Skyline",
@@ -37,7 +37,7 @@
     "nbWing" : 6,
     "price" : 5000,
     "nbPlaces" : 12500,
-    "img" : "src/assets/img/skyline.jpg"
+    "img" : "assets/img/skyline.jpg"
   },
   {
     "name": "Mondoshawan Vessel",
@@ -45,7 +45,7 @@
     "nbWing" : 6,
     "price" : 2500,
     "nbPlaces" : 250000,
-    "img" : "src/assets/img/mondoshawan.jpg"
+    "img" : "assets/img/mondoshawan.jpg"
   },
   {
     "name": "Nostromo",
@@ -53,7 +53,7 @@
     "nbWing" : 6,
     "price" : 4200,
     "nbPlaces" : 80,
-    "img" : "src/assets/img/nostromo.jpg"
+    "img" : "assets/img/nostromo.jpg"
   },
   {
     "name": "Bee",
@@ -61,7 +61,7 @@
     "nbWing" : 4,
     "price" : 5000,
     "nbPlaces" : 2,
-    "img" : "src/assets/img/spaceship-1707016.jpg"
+    "img" : "assets/img/spaceship-1707016.jpg"
   },
   {
     "name": "Narada",
@@ -69,7 +69,7 @@
     "nbWing" : 6,
     "price" : 6500,
     "nbPlaces" : 15,
-    "img" : "src/assets/img/narada.jpg"
+    "img" : "assets/img/narada.jpg"
   },
   {
     "name": "Onyx",
@@ -77,7 +77,7 @@
     "nbWing" : 4,
     "price" : 40000,
     "nbPlaces" : 12500,
-    "img" : "src/assets/img/science-fiction-1924249.jpg"
+    "img" : "assets/img/science-fiction-1924249.jpg"
   },
   {
     "name": "USS-Starfleet",
@@ -85,7 +85,7 @@
     "nbWing" : 4,
     "price" : 7500,
     "nbPlaces" : 5,
-    "img" : "src/assets/img/spaceship-1707016.jpg"
+    "img" : "assets/img/spaceship-1707016.jpg"
   },
   {
     "name": "Rhino",
@@ -93,7 +93,7 @@
     "nbWing" : 2,
     "price" : 750,
     "nbPlaces" : 250,
-    "img" : "src/assets/img/air1.jpg"
+    "img" : "assets/img/air1.jpg"
   },
   {
     "name": "Quartz",
@@ -101,7 +101,7 @@
     "nbWing" : 22,
     "price" : 150,
     "nbPlaces" : 150000,
-    "img" : "src/assets/img/air2.jpg"
+    "img" : "assets/img/air2.jpg"
   },
   {
     "name": "Atlantis",
@@ -109,7 +109,7 @@
     "nbWing" : 2,
     "price" : 12500,
     "nbPlaces" : 10000,
-    "img" : "src/assets/img/air3.jpg"
+    "img" : "assets/img/air3.jpg"
   }
   
 ]

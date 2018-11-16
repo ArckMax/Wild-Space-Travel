@@ -2,7 +2,6 @@ h2{
     font-family: 'Kodchasan', sans-serif;
 }
 
-
 .container-fluid{
     color:#FFF;
 }
@@ -29,7 +28,6 @@ button{
 
 /* Left bloc  */
 
-
 img{
     width: 80%;
     margin-top:25px;
@@ -43,6 +41,7 @@ ul{
     list-style: none;
     margin-top:25px;
 }
+
 .display-info{
     font-size:1.5em;
     background-color: rgba(500, 500, 500, 0.4);

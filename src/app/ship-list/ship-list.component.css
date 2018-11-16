@@ -23,12 +23,13 @@ img{
 .list-title-ship-price{
 
     font-size:1em;
-    font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script', 'Aguafina Script', 'Oleo Script',cursive */;
+    font-family: 'Kodchasan', sans-serif; 
     text-shadow:0 5px 15px black;
-
 }
 
 .inside-ship-box-wrap{
     width: 250px;
+    color:black;
+    font-family: 'Kodchasan', sans-serif;
 }
 

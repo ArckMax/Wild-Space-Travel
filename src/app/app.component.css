@@ -1,48 +1,48 @@
 @font-face{
     font-family: "newSpace";
-    src: url(/src/assets/fonts/new_space/New\ Space.ttf);
+    src: url(/assets/fonts/new_space/New\ Space.ttf);
 }
 
 @font-face{
     font-family: "spaceSurfer";
-    src: url(/src/assets/fonts/spacesurfer/SpaceSurfer_Demo.ttf);
+    src: url(/assets/fonts/spacesurfer/SpaceSurfer_Demo.ttf);
 
 }
 
 @font-face{
     font-family : "SpaceXrebron";
-    src: url(/src/assets/fonts/space_1/space\ Xrebron.ttf);
+    src: url(/assets/fonts/space_1/space\ Xrebron.ttf);
 }
 
 @font-face{
     font-family : "RadioSpace";
-    src: url(/src/assets/fonts/radio_space/radiospace.ttf);
+    src: url(/assets/fonts/radio_space/radiospace.ttf);
 }
 
 @font-face{
     font-family : "RadioSpace3D";
-    src: url(/src/assets/fonts/radio_space/radiospace3d.ttf);
+    src: url(/assets/fonts/radio_space/radiospace3d.ttf);
 }
 
 @font-face{
     font-family : "OtherSpace";
-    src: url(/src/assets/fonts/other_space/Other\ Space.ttf);
+    src: url(/assets/fonts/other_space/Other\ Space.ttf);
 }
 
 @font-face{
     font-family : "SignPainterRegular";
-    src: url(/src/assets/fonts/sign-painter/Sign_Painter_Regular.ttf);
+    src: url(/assets/fonts/sign-painter/Sign_Painter_Regular.ttf);
 
 }
 
 @font-face{
     font-family : "Sign Painter";
-    src: url(/src/assets/fonts/sign-painter/Sign_Painter.ttc);
+    src: url(/assets/fonts/sign-painter/Sign_Painter.ttc);
 
 }
 
 .wrap{
-    background-image: url(/src/assets/img/galaxy1.jpg);
+    background-image: url(/assets/img/galaxy1.jpg);
     background-attachment: fixed;
     padding:10px;
     padding-bottom:150px;

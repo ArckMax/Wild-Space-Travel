@@ -3,33 +3,24 @@
 <div id="hotelslistpage">
   <div class="hotels-list">
 
-    
+      <!-- functionality to be developed : sort out hotel list by price / rating : 
+              <button (click) ="fonction()" class="sort-price-button"> sort by price </button> 
+              <button (click) = "fonction()" class="sort-rating-button"> sort by rating</button> -->
 
 
-<!--         <button (click) ="fonction()" class="sort-price-button"> sort by price </button> 
-             <button (click) = "fonction()" class="sort-rating-button"> sort by rating</button> -->
-
-
-
+      <!--  Wild Space Travel selection of hotels  (collapsible) :   -->  
 
       <div class="accordion" id="accordionExample">
-
           <ul class="hotels">
-
-              <li *ngFor="let hotel of hotels" [class.selected]="hotel === selectedHotel" (click)="onSelect(hotel)" class="row" >
-              
+              <li *ngFor="let hotel of hotels" [class.selected]="hotel === selectedHotel" (click)="onSelect(hotel)" class="row">
                 <div class="col-xs-4 col-sm-4 col-md-6 bold-hotel-title">  {{hotel.name | uppercase}}</div>
                 <div class="col-xs-4 col-sm-4 col-md-6"> Price : {{hotel.price}}.units /night /person </div>
                 <div class="col-xs-2 col-sm-2 col-md-6" >Rating : {{hotel.rating}}</div>
                 <div>
-                  <button class="btn btn-link col-xs-2 col-sm-2 col-md-6" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">More Details </button> 
+                  <button class="btn btn-link col-xs-2 col-sm-2 col-md-6" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">More Details</button> 
                 </div>
 
-
-           
-
-                <div id="collapseOne" class="collapse hide list-inner" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        
+                <div id="collapseOne" class="collapse list-inner" aria-labelledby="headingOne" data-parent="#accordionExample">                
                         <img src="{{hotel.img}}"/>
                         <div class="amenities">HOTEL AMENITIES:</div>
                         <div>Safe-deposit box at front desk </div>
@@ -38,29 +29,23 @@
                         <div>Gift shops or newsstand</div>
                         <div>Tours/ticket assistance </div>
                         <div>ATM/banking </div>   
-                        
-                        <button [routerLink]="['/backToSummary', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, userSettings.SelectedShip, selectedHotel.name]" routerLinkActive="router-link-active" (click)="goTop()" >BOOK this hotel</button>
-            
-                          
-                </div>
-                
+                      <!--  book this hotel button > goes directly to checkout page -->              
+                        <button [routerLink]="['/backToSummary', userSettings.budget, userSettings.distance, userSettings.SelectedPlanet, userSettings.SelectedShip, selectedHotel.name]" routerLinkActive="router-link-active" (click)="goTop()">BOOK this hotel</button>       
+                </div>              
               </li>
           </ul>
       </div>
 
+<!-- functionality to be developed : more details about hotels :
 
-
-
-
-<!--       <div *ngIf="selectedHotel.name!='no_hotel_defined'"> 
+        <div *ngIf="selectedHotel.name!='no_hotel_defined'"> 
           <h2> More Details about {{selectedHotel.name | uppercase}}</h2>
           <div >
             <img src = "{{selectedHotel.img}}" class="selected-img-hotel">
           </div>   
-      </div> -->
+        </div> -->
 
-
-  </div>
-  </div>
+    </div>
+</div>
 
 

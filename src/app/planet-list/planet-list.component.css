@@ -9,6 +9,11 @@
 
 .inside-planet-box-wrap{
     width: 250px;
+    color :black;
+    font-family: Kodchasan, sans-serif;
+
+
+
 }
 
 .planet-box:hover{

@@ -1,10 +1,7 @@
 #hotelslistpage{
-   
    width:80%;
    margin-left:6.5%;
-
 }
-
 
 .hotelpage-titles2{
     color:#fff;
@@ -12,24 +9,16 @@
     padding:5vw;
     font-family:"newSpace", Arial, Helvetica, sans-serif;
     opacity:0.8;
-
 }
-
-
 
 .hotels-list{
-
     padding-bottom:5vw;
-   
 }
 
-
 .bold-hotel-title{
-
   font-weight: bolder;
   text-decoration: underline;
 }
-
 
 
 .hotels li {
@@ -43,14 +32,10 @@
     margin: .5em;
     padding: .3em 0 .3em;
     border-radius: 4px;
-   
   }
-
-
-
+ 
   .hotels li.selected:hover { 
     color: rgb(1, 73, 114);
-    
   }
 
 
@@ -58,18 +43,12 @@
     color:#F50057;
     background-color:#fff;
     left: .1em;
-    
   }
 
-
-
   .list-inner div{
-
     font-size:0.9em; 
     margin-left:5%;
   }
-
-
 
   .list-inner button{
     float:right;
@@ -79,8 +58,6 @@
     border-radius: 5%;
   }
 
-
-
   .list-inner button:hover{
     color: #F50057;
     text-shadow:0 10px 15px #fff;
@@ -88,39 +65,31 @@
     
   }
 
-
   .list-inner img{
-
     width:90%;
     margin-left:5%;
     margin-bottom:2em;
     margin-top:1em;
-    
   }
-
 
   .list-inner:hover{
     left:0;
-   
   }
 
-
  .amenities{
-
   font-weight:bold;
   text-decoration: underline;
-
  }
-
 
  .hotels .list-inner .selected:hover {
   background-color: red !important;
   color:black;
-  
 }
 
+ 
+/* css for hotel sorting functionality  buttons : 
 
-/*  .sort-price-button , .sort-rating-button{
+.sort-price-button , .sort-rating-button{
   cursor: pointer;
    background-color:#FFF;
    opacity:0.7;

@@ -1,6 +1,6 @@
 
 #main-title{
-    font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script',  *//* ' Aguafina Script',  */ /* 'Oleo Script' *//* ,cursive; */ 
+    font-family: 'Kodchasan', sans-serif; 
     color:#FFF;
     text-shadow:0 5px 15px black;
     font-size: 2em;
@@ -14,58 +14,44 @@
 
 
 .btn {
-
     margin:0 !important;
     padding:0 !important;
-
 }
- .card {
 
+ .card {
      background-color:rgba(2, 0, 14, 0.51) !important;
      color:rgba(237, 231, 231);
-     text-shadow:0 5px 15px #fff;
-     
- }
+     text-shadow:0 5px 15px #fff;   
+}
 
 .card-body .hotel-description{
     font-size: 1.2em !important;
-    font-family: 'Kodchasan', sans-serif;
-    
+    font-family: 'Kodchasan', sans-serif;   
 }
-
 
 .more-details-button{
-
     border-radius:5%;
-    padding:0.1em;
+    padding:0;
     margin-top:0;
-    font-size:0.8em;
-   
-    
+    font-size:0.5em;
+    font-family: Kodchasan, Arial, sans-serif;
 }
-
-
 
 #hotelselectionpage{
-
     width:80%;
     margin-left:10%;
-
 }
 
 
+/* adaptation to medium & small screens :  */
 @media only screen and (min-width:900px){
 
     #hotelselectionpage{
 
         width:50%;
-        margin-left:25%;
-        
-    
+        margin-left:25%;           
     }
-
 }
-
 
 .hotel-img-container{
     position:relative;
@@ -73,22 +59,17 @@
     width: 100%;
     max-height: 300px;
     overflow: hidden;
-    padding:0;
-       
+    padding:0;     
 }
 
-
 h5{
-
     font-size:6.5vw;
     text-shadow:0 5px 15px white;
-    opacity:0.9;
-    
+    opacity:0.9; 
 }
 
 
 .hotelpage-titles {
-
     font-family: 'Kodchasan', sans-serif; /*  'Bad Script', */ /* 'Nova Script',  *//* ' Aguafina Script',  */ /* 'Oleo Script' *//* ,cursive; */ 
     color:#FFF;
     text-shadow:0 5px 15px black;
@@ -96,7 +77,6 @@ h5{
     padding-top: 5%;
     padding-bottom:5%;
     text-align: center;
-
 }
 
 .hotel-pic-caption{
@@ -104,43 +84,32 @@ h5{
     padding-top:20%;   
     color:#FFF;
     text-shadow:0 5px 15px white;
-    font-size:2em;
+    font-size:1.5em;
     line-height:2em;
     opacity:0.8;
     z-index:1;
-    font-family: /* ' Aguafina Script', */ 'Oleo Script' ; 
-    
+    font-family:'Kodchasan', sans-serif;
 }
 
 
 .hotel-gallery{
     padding-top:5vw;
     padding-bottom:5vw;
+ }
 
-    
-}
 .hotel-gallery img{
     margin:1vw;
 }
     
-        
- 
 #carouselExampleControls{
     padding-top:8vw;
 }
 
-
-
-
 .carousel-caption h5{
-
     font-size:5vw;
-
-
 }
 
 
 .wspselection{
-
     margin-top:1em;
 }
